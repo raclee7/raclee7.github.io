@@ -86,12 +86,13 @@ body {
 
 .intro {
   font-family: 'Yeseva One', cursive;
-  font-size: 30px;
+  font-size: 2em;
   color: #000;
   text-align: center;
   position: relative;
   padding: 0 1em;
-  top: 35%; }
+  top: 45%;
+  transform: translateY(-50%); }
 
 .main .container {
   padding-top: 1em; }
@@ -139,17 +140,31 @@ img {
   width: 100%;
   padding: 10%; }
 
-@media (min-width: 600px) {
+@media (min-width: 40em) and (max-width: 55em) {
   .top-navigation > .content {
     padding: 0 1em; }
 
+  .column {
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative; }
+
+  .column.half {
+    width: 50%;
+    height: 20em; }
+
+  .column.third {
+    width: 33.33%;
+    height: 15em; }
+
   .intro {
     font-size: 2em;
-    padding: 0 2em; }
+    padding: 0 1em; }
 
   img {
-    padding: 20%; } }
-@media (min-width: 900px) {
+    padding: 5%; } }
+@media (min-width: 55em) {
   .top-navigation > .content {
     padding: 0 1em; }
 
