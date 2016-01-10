@@ -56,15 +56,27 @@ body {
     margin-left: .8em;
 }
 
+.top-navigation .links a {
+    text-decoration: none;
+    color: #838994;
+}
+
 .top-navigation .links .active {
     color: #4c5058;
     margin-left: 0;
     font-weight: 500;
 }
 
-.top-navigation .links li:hover {
+.top-navigation .links li:hover, .top-navigation .links a:hover {
     cursor: pointer;
     color: #333333;
+}
+
+.column {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 20em;
 }
 
 .column.half.first {
@@ -97,12 +109,6 @@ body {
 
 .column.third.sixth {
   background-color: #F1BBBA;
-}
-
-.column.half, .column.third {
-  overflow: hidden;
-  width: 100%;
-  height: 20em;
 }
 
 .intro {
@@ -147,14 +153,21 @@ hr {
   text-align: center;
   padding: 0.525em 0;
   margin: 0 .5em;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
-.social .fa-github {
-  color: #66ff66;
+.icons > li:hover, .icons > li:focus, .icons > li:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
-.social .fa-medium {
-  color: #9999ff;
+.fa {
+  color: #6B5344;
 }
 
 .copy {
@@ -171,7 +184,7 @@ img {
   padding: 15%;
 }
 
-@media (min-width: 40em) and (max-width: 55em) {
+@media (min-width: 40em) and (max-width: 60em) {
   .top-navigation > .content {
     padding: 0 1em;
   }
@@ -180,11 +193,116 @@ img {
     padding-left: 1em;
     padding-right: 1em;
     position: relative;
+    overflow: visible;
   }
   .column.half { 
     width: 50%;
     height: 20em;
-  } 
+  }
+  .column.half.first:after {
+    z-index: 1;
+    background-color: #A79C8E;
+    content: "";
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top: 45%;
+    left: 90%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .column.half.second:after {
+    z-index: 1;
+    background-color: #F8ECC9;
+    content: "";
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top: 87%;
+    left: 75%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .column.third.first:after {
+    z-index: 1;
+    background-color: #F1BBBA;
+    content: "";
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top: -10%;
+    left: 20%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .column.third.first:before {
+    z-index: 1;
+    background-color: #F1BBBA;
+    content: "";
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top: 85%;
+    left: 60%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }    
+  .column.third.last:after {
+    z-index: 1;
+    background-color: #6B5344;
+    content: "";
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .column.third.fourth:after {
+    z-index: 1;
+    background-color: #A79C8E;
+    content: "";
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .column.third.fifth:after {
+    z-index: 1;
+    background-color: #F8ECC9;
+    content: "";
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top: -11%;
+    left: 60%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .column.third.sixth:after {
+    z-index: 1;
+    background-color: #F1BBBA;
+    content: "";
+    width: 4.5em;
+    height: 4.5em;
+    position: absolute;
+    top: 40%;
+    left: -7%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
   .column.third { 
     width: 33.33%;
     height: 15em;
@@ -194,11 +312,11 @@ img {
     padding: 0 1em;
   } 
   img {
-    padding: 5%;
+    padding: 3%;
   }
 }
 
-@media (min-width: 55em) {
+@media (min-width: 60em) {
   .top-navigation > .content {
     padding: 0 1em;
   }
@@ -207,6 +325,111 @@ img {
     padding-left: 1em;
     padding-right: 1em;
     position: relative;
+    overflow: visible;
+  }
+  .column.half.first:after {
+    z-index: 1;
+    background-color: #A79C8E;
+    content: "";
+    width: 4.5em;
+    height: 4.5em;
+    position: absolute;
+    top: 45%;
+    left: 96%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  } 
+  .column.half.second:after {
+    z-index: 1;
+    background-color: #F8ECC9;
+    content: "";
+    width: 4.5em;
+    height: 4.5em;
+    position: absolute;
+    top: 90%;
+    left: 75%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .column.third.first:after {
+    z-index: 1;
+    background-color: #F1BBBA;
+    content: "";
+    width: 4.5em;
+    height: 4.5em;
+    position: absolute;
+    top: -11%;
+    left: 10%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .column.third.first:before {
+    z-index: 1;
+    background-color: #F1BBBA;
+    content: "";
+    width: 4.5em;
+    height: 4.5em;
+    position: absolute;
+    top: 91%;
+    left: 70%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .column.third.last:after {
+    z-index: 1;
+    background-color: #6B5344;
+    content: "";
+    width: 4.5em;
+    height: 4.5em;
+    position: absolute;
+    top: 91%;
+    left: 20%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .column.third.fourth:after {
+    z-index: 1;
+    background-color: #A79C8E;
+    content: "";
+    width: 4.5em;
+    height: 4.5em;
+    position: absolute;
+    top: 70%;
+    left: 94%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .column.third.fifth:after {
+    z-index: 1;
+    background-color: #F8ECC9;
+    content: "";
+    width: 4.5em;
+    height: 4.5em;
+    position: absolute;
+    top: -11%;
+    left: 70%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }  
+  .column.third.sixth:after {
+    z-index: 1;
+    background-color: #F1BBBA;
+    content: "";
+    width: 4.5em;
+    height: 4.5em;
+    position: absolute;
+    top: 45%;
+    left: -9%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
   }
   .column.half { 
     width: 50%;
@@ -221,6 +444,6 @@ img {
     padding: 0 1em;
   }
   img {
-    padding: 7%;
+    padding: 10%;
   }
 }
