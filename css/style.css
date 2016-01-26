@@ -91,12 +91,12 @@ body {
 
 .intro {
   font-family: 'Yeseva One', cursive;
-  font-size: 2em;
+  font-size: 1.5em;
   color: #000;
   text-align: center;
   position: relative;
   padding: 0 1em;
-  top: 45%;
+  top: 50%;
   transform: translateY(-50%); }
 
 .main .container {
@@ -276,7 +276,7 @@ img {
     height: 15em; }
 
   .intro {
-    font-size: 2em;
+    font-size: 1.8em;
     padding: 0 1em; }
 
   img {
@@ -405,7 +405,7 @@ img {
     height: 25em; }
 
   .intro {
-    font-size: 2.5em;
+    font-size: 2em;
     padding: 0 1em; }
 
   img {
