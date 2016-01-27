@@ -152,6 +152,11 @@ img {
   width: 100%;
   padding: 15%; }
 
+.img_cryptoveil {
+  position: absolute;
+  left: 20%;
+  width: 60%; }
+
 @media (min-width: 40em) and (max-width: 60em) {
   .top-navigation > .content {
     padding: 0 1em; }
@@ -254,7 +259,11 @@ img {
     padding: 0 1em; }
 
   img {
-    padding: 3%; } }
+    padding: 3%; }
+
+  .img_cryptoveil {
+    left: 30%;
+    width: 40%; } }
 @media (min-width: 60em) {
   .top-navigation > .content {
     padding: 0 1em; }
@@ -357,6 +366,10 @@ img {
     padding: 0 1em; }
 
   img {
-    padding: 10%; } }
+    padding: 10%; }
+
+  .img_cryptoveil {
+    left: 20%;
+    width: 60%; } }
 
 /*# sourceMappingURL=style.css.map */

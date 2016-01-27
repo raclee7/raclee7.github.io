@@ -184,6 +184,12 @@ img {
   padding: 15%;
 }
 
+.img_cryptoveil {
+  position: absolute;
+  left: 20%;
+  width: 60%;
+}
+
 @media (min-width: 40em) and (max-width: 60em) {
   .top-navigation > .content {
     padding: 0 1em;
@@ -287,6 +293,10 @@ img {
   } 
   img {
     padding: 3%;
+  }
+  .img_cryptoveil {
+    left: 30%;
+    width: 40%;
   }
 }
 
@@ -393,5 +403,9 @@ img {
   }
   img {
     padding: 10%;
+  }
+  .img_cryptoveil {
+    left: 20%;
+    width: 60%;
   }
 }
