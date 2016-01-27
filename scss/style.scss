@@ -114,6 +114,8 @@ body {
 .intro {
   font-family: 'Yeseva One', cursive;  
   font-size: 1.5em;
+  letter-spacing: -0.01em;
+  line-height: 1.3em;
   color: #000;
   text-align: center;
   position: relative;
@@ -177,9 +179,6 @@ hr {
 }
 
 img {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   width: 100%;
   padding: 15%;
 }
@@ -288,10 +287,15 @@ img {
     height: 15em;
   }
   .intro {
-    font-size: 1.8em;
+    letter-spacing: -0.02em;
+    line-height: normal;
+    font-size: 1.3em;
     padding: 0 1em;
   } 
   img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     padding: 3%;
   }
   .img_cryptoveil {
@@ -398,10 +402,15 @@ img {
     height: 25em;
   } 
   .intro {
+    letter-spacing: normal;
+    line-height: normal;
     font-size: 1.8em;
     padding: 0 1em;
   }
   img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     padding: 10%;
   }
   .img_cryptoveil {
