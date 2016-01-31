@@ -208,7 +208,7 @@ img {
   width: 76%;
 }
 
-@media (min-width: 50em) and (max-width: 80em) {
+@media (min-width: 50em) and (max-width: 70em) {
   .top-navigation > .content {
     padding: 0 1em;
   }
@@ -222,7 +222,7 @@ img {
     font-size: 1.3em;
   }
   .main .container {
-    width: 60%;
+    width: 67%;
     position: relative;
     top: 22em;
     margin: 0 auto;
@@ -311,7 +311,7 @@ img {
     height: 15em;
   }
   img {
-    padding: 3%;
+    padding: 2%;
   }
   .img_cryptoveil {
     left: 30%;
@@ -323,7 +323,7 @@ img {
   }
 }
 
-@media (min-width: 80em) {
+@media (min-width: 70em) {
   .top-navigation > .content {
     padding: 0 1em;
   }
@@ -337,7 +337,7 @@ img {
     text-align: center;
   }
   .main .container {
-    width: 56%;
+    width: 65%;
     position: relative;
     top: 22em;
     margin: 0 auto;
@@ -399,7 +399,7 @@ img {
     height: 4.5em;
     position: absolute;
     top: 91%;
-    left: 70%;
+    left: 58%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
