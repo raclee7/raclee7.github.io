@@ -7,6 +7,7 @@ html {
 }
 
 body {
+  background-color: #fff;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
@@ -29,7 +30,6 @@ body {
 }
 
 .top-navigation {
-  background-color: #fff;
   position: fixed;
   width: 100%;
   z-index: 99999;
@@ -42,34 +42,46 @@ body {
 }
 
 .top-navigation .links {
-    float: right;
-    color: #838994;
-    font-size: 1em;
-    margin-top: 1.2em;
-    padding-left: 0;
-    -webkit-font-smoothing: antialiased;
-    transition: color 1s linear;
+  float: right;
+  color: #838994;
+  font-size: 1em;
+  margin-top: 1.2em;
+  padding-left: 0;
+  -webkit-font-smoothing: antialiased;
+  transition: color 1s linear;
 }
 
 .top-navigation .links li {
-    display: inline-block;
-    margin-left: .8em;
+  display: inline-block;
+  margin-left: .8em;
 }
 
 .top-navigation .links a {
-    text-decoration: none;
-    color: #838994;
+  text-decoration: none;
+  color: #838994;
 }
 
 .top-navigation .links .active {
-    color: #4c5058;
-    margin-left: 0;
-    font-weight: 500;
+  color: #4c5058;
+  margin-left: 0;
+  font-weight: 500;
 }
 
 .top-navigation .links li:hover, .top-navigation .links a:hover {
-    cursor: pointer;
-    color: #333333;
+  cursor: pointer;
+  color: #333333;
+}
+
+.intro {
+  width: 90%;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  top: 8em;
+  font-size: 1em;
+  letter-spacing: -0.01em;
+  line-height: 1.5em;
+  color: #000;
 }
 
 .column {
@@ -95,58 +107,52 @@ body {
 }
 
 .column.half.first {
-  background-color: #A79C8E;
+  background-color: #A5FC92;
 }
 
 .column.half.second {
-  background-color: #F8ECC9;
+  background-color: #8AF7CF;
 }
 
 .column.third.first {
-  background-color: #F1BBBA;
+  background-color: #6AE89A;
 }
 
 .column.third.second {
-  background-color: #6B5344;
+  background-color: #fbfbf2;
 }
 
 .column.third.last {
-  background-color: #EB9F9F;
+  background-color: #7CFF92;
 }
 
 .column.third.fourth {
-  background-color: #A79C8E;
+  background-color: #8AF7CF;
 }
 
 .column.third.fifth {
-  background-color: #F8ECC9;
+  background-color: #A5FC92;
 }
 
 .column.third.sixth {
-  background-color: #F1BBBA;
-}
-
-.intro {
-  font-family: 'Yeseva One', cursive;  
-  font-size: 1.5em;
-  letter-spacing: -0.01em;
-  line-height: 1.3em;
-  color: #000;
-  text-align: center;
-  position: relative;
-  padding: 0 1em;
+  background-color: #6AF7D4;
 }
 
 .main .container {
-  padding-top: 1em;
+  position: relative;
+  top: 14em;
 }
-
-.social .container{
+.column.third.second {
+  display: none;
+}
+.social .container {
   width: 50%;
+  text-align: center;
+  position: relative;
+  top: 19em;
   margin: 0 auto;
   padding-bottom: 100px;
   height: auto;
-  text-align: center;
 }
 
 hr {
@@ -182,7 +188,7 @@ hr {
 }
 
 .fa {
-  color: #6B5344;
+  color: #8FEAB3;
 }
 
 .copy {
@@ -198,13 +204,28 @@ img {
 
 .img_cryptoveil {
   position: relative;
-  left: 20%;
-  width: 60%;
+  left: 12%;
+  width: 76%;
 }
 
-@media (min-width: 40em) and (max-width: 60em) {
+@media (min-width: 50em) and (max-width: 80em) {
   .top-navigation > .content {
     padding: 0 1em;
+  }
+  .intro {
+    width: 60%;
+    position: relative;
+    top: 10em;
+    margin: 0 auto;
+    letter-spacing: -0.02em;
+    line-height: normal;
+    font-size: 1.3em;
+  }
+  .main .container {
+    width: 60%;
+    position: relative;
+    top: 22em;
+    margin: 0 auto;
   }
   .column {
     float: left;
@@ -219,25 +240,25 @@ img {
   }
   .column.half.first:after {
     z-index: 1;
-    background-color: #A79C8E;
+    background-color: #A5FC92;
     content: "";
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     position: absolute;
     top: 45%;
-    left: 90%;
+    left: 95%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
   }
   .column.half.second:after {
     z-index: 1;
-    background-color: #F8ECC9;
+    background-color: #8AF7CF;
     content: "";
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     position: absolute;
-    top: 87%;
+    top: 93%;
     left: 75%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -245,12 +266,12 @@ img {
   }
   .column.third.first:after {
     z-index: 1;
-    background-color: #F1BBBA;
+    background-color: #6AE89A;
     content: "";
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     position: absolute;
-    top: -10%;
+    top: -11%;
     left: 20%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -258,39 +279,29 @@ img {
   }
   .column.third.first:before {
     z-index: 1;
-    background-color: #F1BBBA;
+    background-color: #8AF7CF;
     content: "";
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     position: absolute;
-    top: 85%;
+    top: 88%;
     left: 60%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
   }    
+  .column.third.second {
+    display: initial;
+  }
   .column.third.last:after {
     z-index: 1;
-    background-color: #EB9F9F;
+    background-color: #7CFF92;
     content: "";
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     position: absolute;
-    top: 85%;
+    top: 91%;
     left: 20%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-  }
-  .column.third.fifth:after {
-    z-index: 1;
-    background-color: #F8ECC9;
-    content: "";
-    width: 4em;
-    height: 4em;
-    position: absolute;
-    top: -11%;
-    left: 60%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -299,12 +310,6 @@ img {
     width: 33.33%;
     height: 15em;
   }
-  .intro {
-    letter-spacing: -0.02em;
-    line-height: normal;
-    font-size: 1.3em;
-    padding: 0 1em;
-  } 
   img {
     padding: 3%;
   }
@@ -312,11 +317,30 @@ img {
     left: 30%;
     width: 40%;
   }
+  .social .container {
+    position: relative;
+    top: 30em;
+  }
 }
 
-@media (min-width: 60em) {
+@media (min-width: 80em) {
   .top-navigation > .content {
     padding: 0 1em;
+  }
+  .intro {
+    margin: 0 auto;
+    width: 60%;
+    line-height: 1.5em;
+    position: relative;
+    top: 10em;
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .main .container {
+    width: 56%;
+    position: relative;
+    top: 22em;
+    margin: 0 auto;
   }
   .column {
     float: left;
@@ -325,9 +349,12 @@ img {
     position: relative;
     overflow: visible;
   }
+  .column.half img {
+    padding: 7em;
+  }
   .column.half.first:after {
     z-index: 1;
-    background-color: #A79C8E;
+    background-color: #A5FC92;
     content: "";
     width: 4.5em;
     height: 4.5em;
@@ -340,7 +367,7 @@ img {
   } 
   .column.half.second:after {
     z-index: 1;
-    background-color: #F8ECC9;
+    background-color: #8AF7CF;
     content: "";
     width: 4.5em;
     height: 4.5em;
@@ -353,7 +380,7 @@ img {
   }
   .column.third.first:after {
     z-index: 1;
-    background-color: #F1BBBA;
+    background-color: #6AE89A;
     content: "";
     width: 4.5em;
     height: 4.5em;
@@ -366,7 +393,7 @@ img {
   }
   .column.third.first:before {
     z-index: 1;
-    background-color: #F1BBBA;
+    background-color: #8AF7CF;
     content: "";
     width: 4.5em;
     height: 4.5em;
@@ -377,28 +404,18 @@ img {
     -moz-border-radius: 50%;
     border-radius: 50%;
   }
+  .column.third.second {
+    display: initial;
+  }
   .column.third.last:after {
     z-index: 1;
-    background-color: #EB9F9F;
+    background-color: #7CFF92;
     content: "";
     width: 4.5em;
     height: 4.5em;
     position: absolute;
     top: 91%;
     left: 20%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-  }
-  .column.third.fifth:after {
-    z-index: 1;
-    background-color: #F8ECC9;
-    content: "";
-    width: 4.5em;
-    height: 4.5em;
-    position: absolute;
-    top: -11%;
-    left: 70%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -410,12 +427,6 @@ img {
   .column.third { 
     width: 33.33%;
     height: 25em;
-  } 
-  .intro {
-    letter-spacing: normal;
-    line-height: normal;
-    font-size: 1.8em;
-    padding: 0 1em;
   }
   img {
     padding: 10%;
@@ -423,5 +434,9 @@ img {
   .img_cryptoveil {
     left: 10%;
     width: 80%;
+  }
+  .social .container {
+    position: relative;
+    top: 30em;
   }
 }
