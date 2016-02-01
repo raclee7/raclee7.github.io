@@ -5,7 +5,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #fff;
+  background-color: #fbfbf2;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
@@ -63,12 +63,17 @@ body {
   width: 90%;
   position: relative;
   text-align: center;
+  text-transform: uppercase;
   margin: 0 auto;
   top: 8em;
   font-size: 1em;
-  letter-spacing: -0.01em;
-  line-height: 1.5em;
+  letter-spacing: 0.09em;
+  line-height: 1.8em;
   color: #000; }
+  .intro .strong {
+    font-weight: 700; }
+  .intro .break {
+    display: block; }
 
 .column {
   position: relative;
@@ -290,8 +295,9 @@ img {
 
   .intro {
     margin: 0 auto;
-    width: 60%;
-    line-height: 1.5em;
+    width: 40%;
+    text-transform: uppercase;
+    line-height: 2em;
     position: relative;
     top: 10em;
     font-size: 1.3em;
