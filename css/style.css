@@ -186,8 +186,7 @@ img {
     position: relative;
     top: 10em;
     margin: 0 auto;
-    letter-spacing: -0.02em;
-    line-height: normal;
+    line-height: 2em;
     font-size: 1.3em;
     white-space: nowrap; }
 
