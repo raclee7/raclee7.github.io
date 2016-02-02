@@ -75,7 +75,7 @@ body {
 .intro {
   width: 90%;
   position: relative;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   margin: 0 auto;
   top: 8em;
@@ -227,6 +227,7 @@ img {
     line-height: 2em;
     font-size: 1.3em;
     white-space: nowrap;
+    text-align: center;
   }
   .main .container {
     width: 67%;
