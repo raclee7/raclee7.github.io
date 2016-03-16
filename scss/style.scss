@@ -187,7 +187,15 @@ hr {
   transition-duration: 0.5s;
 }
 
+.icons a {
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
 .icons > li:hover, .icons > li:focus, .icons > li:active {
+  cursor: pointer;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
   -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
