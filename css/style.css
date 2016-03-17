@@ -89,8 +89,7 @@ body {
   .intro-grid .intro-grid-item {
     float: left;
     width: 50%;
-    height: 100%;
-    /*line-height: 15em;*/ }
+    height: 100%; }
   .intro-grid .pic {
     line-height: 25em; }
   .intro-grid .name {
@@ -132,9 +131,10 @@ body {
   float: left;
   width: 50%; }
 
-.work .project-descripton {
+.work .project-description {
   float: left;
-  width: 50%; }
+  width: 50%;
+  text-align: justify; }
 
 .work .project-summary {
   line-height: 1.5; }
@@ -152,7 +152,7 @@ body {
   padding-bottom: 100px;
   height: auto; }
 
-hr {
+.divider {
   width: 50%;
   margin: 5em auto;
   border-top: .1em solid #eaebec; }
@@ -195,5 +195,52 @@ hr {
   font-size: .8em;
   font-weight: 300;
   color: #838994; }
+
+@media only screen and (max-width: 70em) {
+  .logo {
+    top: 1.2em;
+    left: 2em;
+    letter-spacing: 0.08em; }
+
+  .links {
+    position: relative;
+    left: 8%; }
+
+  .intro-grid .profile-pic {
+    left: 30%; }
+  .intro-grid .intro-name {
+    font-size: 1.3em; }
+
+  .intro-projects-grid {
+    margin: 2em auto; }
+
+  .intro-block {
+    text-align: justify;
+    width: 85%;
+    line-height: 1.5em; }
+
+  .work .project-item {
+    width: 100%;
+    height: 100%;
+    margin: 3em auto; }
+
+  .work .project-image {
+    display: block;
+    margin-bottom: 2em;
+    width: 100%;
+    height: 100%;
+    text-align: center; }
+    .work .project-image img {
+      margin-top: 7em;
+      height: 150px; }
+
+  .work .project-description {
+    display: block;
+    text-align: justify;
+    width: 100%;
+    height: 100%; }
+
+  .work .project-title {
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
