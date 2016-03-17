@@ -239,6 +239,13 @@ hr {
   color: #838994;
 }
 
-@media (max-width: 70em) {
+@media (min-width: 50em) and (max-width: 70em) {
 
 }
+
+
+@media only screen and (min-width: 50em) {
+
+}
+
+
