@@ -97,6 +97,10 @@ body {
   height: 100%;
 }
 
+.link-color {
+  color: #6799FF;
+}
+
 .intro-grid {
   width: 100%;
   height: 16em;
@@ -114,7 +118,7 @@ body {
   }
   .intro-name {
     margin: 0;
-    font-size: 1.3em;
+    font-size: 1.7em;
     font-weight: 700;
   }
   .profile-pic {
@@ -122,6 +126,7 @@ body {
     left: 65%;
   }
 }
+
 .intro-block {
   width: 50%;
   margin: 0 auto;
@@ -136,29 +141,44 @@ body {
   }
 }
 
-.work .projects-grid-container {
-  width: 100%;
-  position: relative;
-  margin: 0 auto;
-}
-
 .intro-projects-grid {
-  margin-top: 3em;
+  margin: 5em auto;
   text-align: center;
   font-size: 1.3em;
   font-weight: 700;
 }
 
-.work .projects-grid {
-  padding-left: 0;
-  margin: 0;
-  list-style-type: none;
+.work .projects-grid-container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.work .project-item {
+  height: 20em;
+}
+
+.work .project-image {
+  float: left;
+  width: 50%;
+}
+
+.work .project-descripton {
+  float: left;
+  width: 50%;
+}
+
+.work .project-summary {
+  line-height: 1.5;
+}
+
+.work .project-title {
+  font-weight: 700;
 }
 
 .social .container {
   position: relative;
 }
-
 
 .social .container {
   width: 50%;
