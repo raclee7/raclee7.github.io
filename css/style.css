@@ -220,11 +220,14 @@ body {
 
   .intro-block {
     text-align: justify;
-    width: 80%;
+    width: 90%;
     line-height: 1.5em; }
 
   .show-only-desktop {
     display: none; }
+
+  .work .projects-grid-container {
+    width: 90%; }
 
   .work .project-item {
     overflow: hidden;
