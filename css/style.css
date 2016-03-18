@@ -199,8 +199,8 @@ body {
 @media only screen and (max-width: 70em) {
   .logo {
     top: 1.2em;
-    left: 2em;
-    letter-spacing: 0.08em; }
+    left: 1.5em;
+    letter-spacing: 0.03em; }
 
   .links {
     position: relative;
@@ -216,13 +216,14 @@ body {
 
   .intro-block {
     text-align: justify;
-    width: 85%;
+    width: 80%;
     line-height: 1.5em; }
 
   .work .project-item {
+    overflow: hidden;
     width: 100%;
     height: 100%;
-    margin: 3em auto; }
+    margin: 9em auto; }
 
   .work .project-image {
     display: block;
@@ -231,7 +232,6 @@ body {
     height: 100%;
     text-align: center; }
     .work .project-image img {
-      margin-top: 7em;
       height: 150px; }
 
   .work .project-description {
