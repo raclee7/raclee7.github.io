@@ -276,6 +276,10 @@ body {
     line-height: 1.5em;
   }
 
+  .show-only-desktop {
+    display: none;
+  }
+  
   .work .project-item {
     overflow: hidden;
     width: 100%;
