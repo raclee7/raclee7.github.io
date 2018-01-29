@@ -182,8 +182,7 @@ body {
 .icons a {
   text-decoration: none;
   display: block;
-  width: 40px;
-  height: 40px; }
+  width: 38px; }
 
 .icons > li:hover, .icons > li:focus, .icons > li:active {
   cursor: pointer;
@@ -255,5 +254,3 @@ body {
 
   .img_cryptoveil {
     left: 0; } }
-
-/*# sourceMappingURL=style.css.map */
