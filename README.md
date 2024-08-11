@@ -13,3 +13,6 @@ Commit, push, and go to https://codingwithrachel.github.io/ to see the changes l
 
 ## Analytics
 [My website](https://codingwithrachel.github.io/) uses Google Analytics 4 to understand the user behavior on the site.
+
+## References
+Credits to [Cute Kawaii Resources](https://cutekawaiiresources.wordpress.com/category/favicons/page/2/) for the favicon.
