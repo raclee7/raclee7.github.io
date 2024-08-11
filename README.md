@@ -1,18 +1,18 @@
 ## Introduction
 
-Welcome to my personal portfolio!
+Welcome to the Github page for my personal portfolio!
 
 ## Development
-Run below in the terminal to compile sass into css.
+Run below in the terminal to compile sass into css
 ```
 sass --watch scss/style.scss css/style.css
 ```
-Open up the `index.html` in your browser to see changes.
+Open up the `index.html` in your browser to see changes
 
-Commit, push, and go to https://codingwithrachel.github.io/ to see the changes live.
+Commit, push, and go to https://codingwithrachel.github.io/ to see the changes live
 
 ## Analytics
-[My website](https://codingwithrachel.github.io/) uses Google Analytics 4 to understand the user behavior on the site.
+Used Google Analytics 4 to understand user behavior on the [live website](https://codingwithrachel.github.io/) 
 
 ## References
-Credits to [Cute Kawaii Resources](https://cutekawaiiresources.wordpress.com/category/favicons/page/2/) for the favicon.
+Credits to [Cute Kawaii Resources](https://cutekawaiiresources.wordpress.com/category/favicons/page/2/) for the favicon
