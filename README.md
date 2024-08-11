@@ -9,4 +9,4 @@ sass --watch scss/style.scss css/style.css
 ```
 Open up the `index.html` in your browser to see changes.
 
-Commit, push, and go to https://lemon707.github.io/ to see the changes live.
+Commit, push, and go to https://codingwithrachel.github.io/ to see the changes live.
