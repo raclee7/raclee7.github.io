@@ -31,7 +31,7 @@
       </div>
       <div class="intro-block">
         <p>If you have somehow stumbled into this place, welcome!</p>
-        <p>Currently, I'm a <strong>senior software engineer</strong> working out of <strong>NYC</strong>.</span></p>
+        <p>Currently, I'm a <strong>senior software engineer</strong> working out of <strong>New York City</strong>.</span></p>
         <p class="subintro">What brought me into the tech scene and continue to fascinate me, are the open sharing of code and ideas and the creative problem-solving nature of software development.</p>
       </div>
     </div>
@@ -53,22 +53,30 @@
           </div>
           <div class="project-description">
             <p class="project-title">Priceline</p>
-            <p class="project-summary">As part of the Web UX team, I led the frontend architecture design and technical implementation of high-traffic, consumer-facing travel products (some featured during the CEO update), including Alternative Car Supplier Onboarding, Car Upgrade in Checkout, Trip Protection in Car and Flights, and Package Full Listings.</p>
-            <p class="project-summary">My most proud technical contributions include leading TypeScript, Hydration, Server-Side Rendering, and 12-Factor web development initiatives by deep diving into ES6 JavaScript, TypeScript, Babel JavaScript Compiler, React/Redux JavaScript Library (with Modern Hooks), Node/Express JavaScript Runtime, GraphQL Query Language, Webpack Module Bundler, and Splunk/New Relic/GKE Stackdriver Logging & Monitoring.</p>
-            <p class="project-summary">You can also see some of my work in various filters ("Car Type", "Deals", "Save Your Budget", "Price", "Shuttle" filters) featured throughout the site</p>
-            <p class="project-summary">In addition to making active code contributions, I automated development workflows with Github Actions and deployed features with Docker, Harness, and Codefresh.</p>
-            <p class="project-summary">Some of my other technical work include: 
+            <p class="project-summary">As part of the Web UX team, I led the frontend architecture design and technical implementation of high-traffic, consumer-facing travel products (some featured during the CEO update!), including Alternative Car Suppliers Onboarding, Trip Protection in Car and Flights, Universal/Unified Checkout Migration, Package Full Listings with Unified Search, and Rental Car Upgrade in Checkout.</p>
+            <p class="project-summary">This often involved initiating discussions with stakeholders, communicating across multiple engineering teams across the organization (as well as Business, Marketing, Product, Design, and Analytics), and serving as a technical product manager in creating a backlog of JIRA tickets with descriptions and acceptance criterias for project deliverables.</p>
+            <p class="project-summary">My most proud technical contributions include leading server-side rendering, hydration, and 12-Factor based web development initiatives by deep diving into ES6 JavaScript, TypeScript, Babel JavaScript Compiler, React (+Redux) JavaScript Library with Modern Hooks, Node (+Express) JavaScript Runtime, GraphQL (+Apollo API Platform) Query Language, Webpack Module Bundler, and Splunk/New Relic/GKE Stackdriver Logging & Monitoring.</p>
+            <p class="project-summary">You can also see some of my work featured in various filters ("Car Type", "Deals", "Save Your Budget", "Price", and "Shuttle" filter) throughout the site.</p>
+            <p class="project-summary">In addition to making active code contributions, I automated development workflows with Github Actions and deployed features with Docker, Harness, and Codefresh (our most recent GitOps based delivery platform).</p>
+            <p class="project-summary">If you'd like to peek into some of my technical work, they include: 
               <ul class="project-details">
-                <li class="project-details-line">resolving react-dom hydration errors which allowed application to be properly rendered server-side with ~80% reduction in error rates in New Relic production logs (also stopped PagerDuty alerts for WebUX team!) - our team no longer saw “uncaught runtime” errors during local development as well as “minified react errors” in production</li>
-                <li class="project-details-line">upgrading our frontend applications to the React 18 ecosystem by deep diving into Webpack, Loadable Components, Server-Side Rendering vs Client-Side Rendering, Styled Components, and JavaScript Compilation with Babel</li>
-                <li class="project-details-line">advocating 12-factor app goals during on-prem to Cloud migration by setting up backing services for frontend applications with environment variables (pushed updates to .env file, Webpack build configurations, PCLN internal development tool environment setups, Harness templates, and GKE stackdriver logs)</li>
-                <li class="project-details-line">solving memory leak issues that caused Kubernetes pod restarts by investigating New Relic garbage collection logs and updating DockerFile configuration (stopped PagerDuty alerts for WebUX team!)</li>
+                <li class="project-details-line">resolving react-dom hydration errors which allowed Rental Car frontend applications to be properly rendered server-side with ~80% reduction in error rates in New Relic production logs (which stopped PagerDuty alerts for our team!) - as a result our team no longer saw “uncaught runtime” errors during local development as well as “minified react errors” in production</li>
+                <li class="project-details-line">upgrading our frontend applications to the React 18 ecosystem by deep diving into Webpack, Loadable Components, Static Server-Side Rendering vs Streaming Server-Side Rendering of HTML, Styled Components, and JavaScript Compilation with Babel</li>
+                <li class="project-details-line">advocating 12-factor app goals during on-prem to cloud migration by setting up backing services for frontend applications with environment variables (and by pushing updates to .env file, Webpack build configurations, Priceline internal development tool environment setups, Harness templates, and GKE stackdriver logs) - as a result our team was able to efficiently test changes in sandbox, on-prem, and cloud environments by switching backing services</li>
+                <li class="project-details-line">solving memory leak issues that caused Kubernetes pod restarts by investigating New Relic garbage collection logs and updating DockerFile configuration (which stopped PagerDuty alerts for our team!)</li>
                 <li class="project-details-line">updating github action workflows to auto-deploy on QA environments and enhancing developer productivity by shaving off 0.5-1hr of manual deploy time</li>
                 <li class="project-details-line">serving as main point of contact for Rental Cars WebUX and iOS team in iOS team’s migration from using REST API to GraphQL</li>
                 <li class="project-details-line">leading Google Analytics 4 migration in coordination with the Analytics Team, improving event-driven data tracking of customer behaviors across products</li>
+                <li class="project-details-line">advocating usage of WebP (with Fastly configurations in the edge layer) to support lossness compression and faster loading of web images</li>
+                <li class="project-details-line">suggesting usage of lazy loading solutions to improve mobile filters and "load more" performance</li>
+                <li class="project-details-line">introducing Cypress end-to-end testing, setting up environment configurations, creating example spec files, and laying groundwork for cross-browser and A/B testing (Cypress was later replaced by Mabl)</li>
+                <li class="project-details-line">supporting type safety by migrating Rental Car landing page to use TypeScript with updates to Webpack and Babel configurations</li>
+                <li class="project-details-line">creating a shared, re-usable component for Trip Protection that generated 20% of company revenue</li>
+                <li class="project-details-line">building the data sequence diagram and implementing solutions for the rental car upgrade in checkout feature that successfully launched with 4.6% conversion rate</li>
+                <li class="project-details-line">designing technical roadmap of client business logic migration to GraphQL and setting guidelines together with the team</li>
               </ul>
             </p>
-            <p class="project-summary">My friend and I also won grand prize at the 2020 Priceline Hackathon with for a <a href="https://www.youtube.com/watch?v=Ish32PtfFxA" target="_blank" class="link-color">project</a> that maps a rental car trip with optimized routes.</p>
+            <p class="project-summary">My friend and I also won grand prize at the 2020 Priceline Hackathon with for a <a href="https://www.youtube.com/watch?v=Ish32PtfFxA" target="_blank" class="link-color">project</a> that visualizes a customer's rental car trip on a map with optimized routes.</p>
           </div>
         </div>
         <div class="project-item">
@@ -79,7 +87,7 @@
           </div>
           <div class="project-description">
             <p class="project-title">Hydrogen</p>
-            <p class="project-summary">One of my favorite work projects was building out interfaces of "Hydro: Security & Identity", a two-factor authentication mobile app (DApp) that launched for <a href="https://itunes.apple.com/app/id1406519814" target="_blank" class="link-color">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.hydrogenplatform.hydro" target="_blank" class="link-color">Android</a> in July 2018. Read more about my experience with the team on developing the React Native app <a href="https://medium.com/hydrogen-api/developing-the-hydro-mobile-app-b0945f610e56" target="_blank" class="link-color">here</a>.</p>
+            <p class="project-summary">One of my favorite work projects was building out interfaces of "Hydro: Security & Identity", a two-factor authentication mobile app (DApp) that launched for iOS and Android in July 2018. Read more about my experience with the team on developing the React Native app <a href="https://medium.com/hydrogen-api/developing-the-hydro-mobile-app-b0945f610e56" target="_blank" class="link-color">here</a>.</p>
             <p class="project-summary">How the app works:
               <ul class="project-details">
                 <li class="project-details-line">It creates a secure Ethereum wallet on your phone and saves your public Ethereum address mapped to a HydroID on the Ethereum blockchain.</li>
@@ -91,8 +99,7 @@
             </p>
             <p class="project-summary">Moreover, I developed sample apps with web3.js, such as this <a href="https://github.com/hydrogen-dev/Hydro-Auth" target="_blank" class="link-color">code</a> which performs authentication via our smart contract. A detailed walk-through of the code is available <a href="https://medium.com/hydrogen-api/authenticating-on-the-blockchain-with-hydro-web3-js-3a7de9cc906b" target="_blank" class="link-color">here</a>.</p>
             <p class="project-summary">Some of my other projects include demos and admin & analytics tools interacting with our core financial API suite. Our team used React/Redux, Angular1, Node/Express, and C3.js on the frontend.</p>
-            <p class="project-summary">I also presented sales demos to potential clients and built technical prototypes at proof-of-concept workshops with other engineers.</p>
-            <p class="project-summary">As the 7th hire in the company, I reported directly to the CTO and CPO.</p>
+            <p class="project-summary">I also presented sales demos to potential clients and built technical prototypes at proof-of-concept workshops with other engineers (which included fun work trips to Chile which I am still thankful for!).</p>
           </div>
         </div>
         <div class="project-item">
@@ -104,6 +111,7 @@
           <div class="project-description">
             <p class="project-title">Hedgeable</p>
             <p class="project-summary">As we migrated from a JavaScript/PHP codebase at Hedgeable, I took upon the initial task of scaffolding what is now our Angular2 & Node/Express <a href="https://www.hedgeable.com/" target="_blank" class="link-color">web platform</a> that interacts with internal APIs. Some of the things I built with our team of engineers and designers include: marketing site, data visualizations in D3.js and C3.js, session management with Redis, and user interface for two-factor authentication.</p>
+            <p class="project-summary">As the 7th hire in the company, I reported directly to the CTO and CPO.</p>
           </div>
         </div>
         <div class="project-item">
@@ -114,7 +122,7 @@
           </div>
           <div class="project-description">
             <p class="project-title">Patron</p>
-            <p class="project-summary">Developing the <a href="http://www.musae.org" target="_blank" class="link-color">landing page</a> was my first big Angular1 project at Patron (now Musae) where I was responsible for the user interface and Heroku deployment of the alpha product for the arts network platform.</p>
+            <p class="project-summary">Developing the <a href="http://www.musae.org" target="_blank" class="link-color">landing page</a> was my first big Angular1 project at Patron (now Musae) where I was responsible for the user interface and Heroku deployment of the alpha product for the arts network platform. We were a small, distributed team of engineers across time zones.</p>
           </div>
         </div>
       </div>
