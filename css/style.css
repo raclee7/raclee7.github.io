@@ -180,6 +180,11 @@ body {
   text-align: left;
 }
 
+.work .project-details .project-details-line {
+  line-height: 1.5em;
+  text-align: left;
+}
+
 .work .project-title {
   margin-top: 0em;
   font-weight: 600;
