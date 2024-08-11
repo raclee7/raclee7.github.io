@@ -62,46 +62,80 @@
           </div>
           <div class="project-description">
             <p class="project-title">Priceline</p>
-            <p class="project-summary">As part of the Web UX team, I led the frontend architecture design and technical implementation of high-traffic, consumer-facing travel products (some featured during the CEO update!), including Alternative Car Suppliers Onboarding, Trip Protection in Car and Flights, Universal/Unified Checkout Migration, Package Full Listings with Unified Search, and Rental Car Upgrade in Checkout.</p>
+            <p class="project-summary">As part of the Web UX team, I led the frontend architecture design and technical implementation of high-traffic, consumer-facing travel products (some featured during the CEO update!), including Alternative Car Suppliers Onboarding, Trip Protection in Car and Flights, Universal/Unified Checkout Migration, Packages Full Listings with Unified Search, and Rental Car Upgrade in Checkout.</p>
             <p class="project-summary">This often involved initiating discussions with stakeholders, communicating across multiple engineering teams across the organization (as well as Business, Marketing, Product, Design, and Analytics), and serving as a technical product manager in creating a backlog of JIRA tickets with descriptions and acceptance criterias for project deliverables.</p>
             <p class="project-summary">My most proud technical contributions include leading the React 18 migration, server-side rendering & hydration (process that restores the server-side rendered application on the client), and 12-Factor based web development initiatives by deep diving into ES6 JavaScript, TypeScript, Babel JavaScript Compiler, React (+Redux) JavaScript Library with Modern Hooks, Node (+Express) JavaScript Runtime, GraphQL (+Apollo API Platform) Query Language, Webpack Module Bundler, and Splunk/New Relic/GKE Stackdriver Logging & Monitoring.</p>
             <p class="project-summary">In addition to making active code contributions, I automated development workflows with Github Actions and deployed features with Docker, Harness, and Codefresh (our most recent GitOps based delivery platform).</p>
             <p class="project-summary">I'm also a fan of integrating GenAI into the workspace. ChatGPT has been helpful when helping write unit tests and Codeium with autosuggesting code blocks.</p>
             <p class="project-summary">If you'd like to peek into some of my technical work, they include: 
-              <ul class="project-details">
-                <li class="project-details-line">resolving react-dom hydration errors which allowed Rental Car frontend applications to be properly rendered server-side with ~80% reduction in error rates in New Relic production logs (which stopped PagerDuty alerts for our team!) - as a result our team no longer saw “uncaught runtime” errors during local development as well as “minified react errors” in production</li>
-                <li class="project-details-line">migrating our frontend apps from static to streaming server-side rendering for fast TTFB (note: we had to revert back to static SSR due to Styled Components not being compatible with React 18 Streaming API)</li>
-                <li class="project-details-line">upgrading our frontend applications to the React 18 ecosystem by deep diving into Webpack, Loadable Components, Static Server-Side Rendering vs Streaming Server-Side Rendering of HTML, Styled Components, and JavaScript Compilation with Babel</li>
-                <li class="project-details-line">advocating 12-factor app goals during on-prem to cloud migration by setting up backing services for frontend applications with environment variables (and by pushing updates to .env file, Webpack build configurations, Priceline internal development tool environment setups, Harness templates, and GKE stackdriver logs) - as a result our team was able to efficiently test changes in sandbox, on-prem, and cloud environments by switching backing services</li>
-                <li class="project-details-line">solving memory leak issues that caused Kubernetes pod restarts by investigating Splunk & New Relic garbage collection logs and updating DockerFile configuration (which stopped PagerDuty alerts for our team!)</li>
-                <li class="project-details-line">updating github action workflows to auto-deploy on QA environments and enhancing developer productivity by shaving off 0.5-1hr of manual deploy time</li>
-                <li class="project-details-line">updating internal slack github action workflow so that engineers can set the base git branch and notify the changes against base branch on Slack</li>
-                <li class="project-details-line">serving as main point of contact for Rental Cars WebUX and iOS team in iOS team’s migration from using REST API to GraphQL</li>
-                <li class="project-details-line">leading Google Analytics 3 to 4 migration in coordination with the Analytics Team, improving event-driven data tracking of customer behaviors across products</li>
-                <li class="project-details-line">advocating usage of WebP (with Fastly configurations in the edge layer) to support lossness compression and faster loading of web images</li>
-                <li class="project-details-line">suggesting usage of lazy loading solutions to improve mobile filters and "load more" performance which decreated time to visually complete</li>
-                <li class="project-details-line">introducing Cypress end-to-end testing, setting up environment configurations, creating example spec files, and laying groundwork for cross-browser and A/B testing (it is now replaced by Mabl)</li>
-                <li class="project-details-line">creating utility functions that transform old data format to new Unified Search & Checkout schemas</li>
-                <li class="project-details-line">supporting type safety by migrating Rental Car landing page to use TypeScript with updates to Webpack and Babel configurations</li>
-                <li class="project-details-line">leading Fullstory implementation across frontend apps to mask personal data in all PII elements for privacy reasons</li>
-                <li class="project-details-line">investigating marketing pixels behaviors across pages to determine if they should be fired per every user interaction</li>
-                <li class="project-details-line">investigating drop on mobile homepage ad unit impressions and working with the marketing team to reload new Tealium rules</li>
-                <li class="project-details-line">fixing point of sale pricing bugs by updating the request-handler library in internal Monorepo and reading Stackdriver logs</li>
-                <li class="project-details-line">creating a shared, reusable component for Trip Protection that generated 20% of company revenue</li>
-                <li class="project-details-line">adding a reusable business promotions graphQL operation to be shared across products</li>
-                <li class="project-details-line">introducing "edit search" modal on mobile view</li>
-                <li class="project-details-line">introducing "scroll to top" button at the bottom of the page</li>
-                <li class="project-details-line">developing some of the most used filters ("Car Type", "Deals", "Save Your Budget", "Price", and "Shuttle" filter)</li>
-                <li class="project-details-line">resolving lat/long issues on map view to correctly show rental car counter locations</li>
-                <li class="project-details-line">fixing map view so that map height is size of the screen and not larger than the customer's screen</li>
-                <li class="project-details-line">adding new sorting logic for deep linked Kayak searches</li>
-                <li class="project-details-line">supporting screen readers and web accessibility by updating meta viewport tags (removing user-scalable="no" parameters and maximum-scale parameter set to less than 5) and adding aria-label to elements</li>
-                <li class="project-details-line">handling internal server errors so that users are redirected to validation pages showing informative error messages based on error codes with options to redo the search</li>
-                <li class="project-details-line">building the data sequence diagram and implementing solutions for the rental car upgrade in checkout feature that successfully launched with 4.6% conversion rate</li>
-                <li class="project-details-line">designing technical roadmap of client business logic migration to GraphQL and setting guidelines together with the team</li>
-              </ul>
+              <p class="project-year">2024
+                <ul class="project-details">
+                  <li class="project-details-line">resolving react-dom hydration errors which allowed Rental Car frontend applications to be properly rendered server-side with ~80% reduction in error rates in New Relic production logs (which stopped PagerDuty alerts for our team!) - as a result our team no longer saw “uncaught runtime” errors during local development as well as “minified react errors” in production</li>
+                  <li class="project-details-line">upgrading our frontend applications to the React 18 ecosystem by deep diving into Webpack, Loadable Components, Static Server-Side Rendering vs Streaming Server-Side Rendering of HTML, Styled Components, and JavaScript Compilation with Babel</li>
+                  <li class="project-details-line">designing technical roadmap of client business logic migration to GraphQL and setting guidelines together with the team</li>
+                  <li class="project-details-line">creating frontend MVP roadmap of non-traditional supplier onboarding and creating a backlog of engineering tasks</li>
+                  <li class="project-details-line">updating github action workflows to auto-deploy on QA environments and enhancing developer productivity by shaving off 0.5-1hr of manual deploy time</li>
+                  <li class="project-details-line">updating internal slack github action workflow so that engineers can set the base git branch and notify the changes against base branch on Slack</li>
+                  <li class="project-details-line">leading Google Analytics 3 to 4 migration in coordination with the Analytics Team, improving event-driven data tracking of customer behaviors across products</li>
+                  <li class="project-details-line">handling internal server errors so that users are redirected to validation pages showing informative error messages based on error codes with options to redo the search</li>
+                  <li class="project-details-line">advocating development of a shared vehicle listings card in Monorepo to be used across Rental Car paths (Cross-Sell in Hotels and Flights, Upsell in Post Booking, Upgrade in Checkout, White Label, Packages, Standlone RC) </li>
+                  <li class="project-details-line">participating in hiring interviews in search for a WebUX engineering manager</li>
+                  <li class="project-details-line">building a personality based & internal GenAI API powered trip recommendation quiz in a team of 5 at the Priceline Hackathon</li>
+                </ul>
+              </p>
+              <p class="project-year">2023
+                <ul class="project-details">
+                  <li class="project-details-line">building the data sequence diagram and implementing solutions for the Car Upgrade in Checkout feature (multi-quarter project) that successfully launched with 4.6% conversion rate</li>
+                  <li class="project-details-line">refining frontend scope and requirements for Packages Full Listings (multi-quarter project) enabling existing Rental Cars listings to be featured during customers' Packages search</li>
+                  <li class="project-details-line">ramping up a junior engineer in her first 90 days of onboarding to make contributions across 3+ codebases to integrate special equipments pricing in checkout (child seats, ski lifts, etc) and collect commissions from suppliers</li>
+                  <li class="project-details-line">creating utility functions that transform old data format to new Unified Search (for Packages Full Listings launch) & Checkout (for Car Upgrades launch) schemas</li>
+                  <li class="project-details-line">participating in hiring interviews for the co-op student program</li>
+                </ul>
+              </p>
+              <p class="project-year">2022
+                <ul class="project-details">
+                  <li class="project-details-line">serving as main point of contact for Rental Cars WebUX and iOS team in iOS team’s migration from using REST API to GraphQL</li>
+                  <li class="project-details-line">leading Fullstory implementation across frontend apps to mask personal data in all PII elements for privacy reasons</li>
+                  <li class="project-details-line">creating a shared, reusable component for Trip Protection in checkout that generated 20% of company revenue and implementing ways to handle protection service failure scenarios based on error codes and update summary of charges</li>
+                  <li class="project-details-line">fixing point of sale pricing bugs by investigating Stackdriver logs and updating the request-handler library in Monorepo</li>
+                  <li class="project-details-line">developing some of the most used filters ("Deals", "Save Your Budget", "Price", and "Shuttle" filter)</li>
+                  <li class="project-details-line">introducing "edit search" modal on mobile view</li>
+                  <li class="project-details-line">supporting screen readers and web accessibility by updating meta viewport tags (removing user-scalable="no" parameters and maximum-scale parameter set to less than 5) and adding aria-label to elements</li>
+                </ul>
+              </p>
+              <p class="project-year">2021
+                <ul class="project-details">
+                  <li class="project-details-line">migrating our frontend apps from static to streaming server-side rendering for fast TTFB (note: in 2024 we had to revert back to static SSR due to Styled Components not being compatible with React 18 Streaming API)</li>
+                  <li class="project-details-line">advocating 12-factor app goals during on-prem to cloud migration by setting up backing services for frontend applications with environment variables (and by pushing updates to .env file, Webpack build configurations, Priceline internal development tool environment setups, Harness templates, and GKE stackdriver logs) - as a result our team was able to test changes in sandbox, on-prem, and cloud environments by easily switching backing services per environment</li>
+                  <li class="project-details-line">solving memory leak issues that caused Kubernetes pod restarts by investigating Splunk & New Relic garbage collection logs and updating DockerFile configuration (which stopped PagerDuty alerts for our team!)</li>
+                  <li class="project-details-line">suggesting usage of lazy loading solutions to improve mobile filters and "load more" performance which decreated time to visually complete</li>
+                  <li class="project-details-line">adding a reusable business promotions GraphQL operation to be shared across products</li>
+                  <li class="project-details-line">investigating marketing pixels behaviors across pages to determine if they should be fired per every user interaction</li>
+                </ul>
+              </p>
+              <p class="project-year">2020
+                <ul class="project-details">
+                  <li class="project-details-line">introducing Cypress end-to-end testing, setting up environment configurations, creating example spec files, and laying groundwork for cross-browser and A/B testing (note: in 2024 it is now replaced by Mabl)</li>
+                  <li class="project-details-line">resolving lat/long issues on map view to correctly show rental car counter locations</li>
+                  <li class="project-details-line">fixing map view so that map height is size of the screen and not larger than the customer's screen</li>
+                  <li class="project-details-line">adding new sorting logic for deep linked Kayak searches</li>
+                  <li class="project-details-line">implementing deep link when selecting counter locations from homepage Typeahead</li>
+                  <li class="project-details-line">building merchandising/promotion banners based on business requests and updating the carousel banners display to make the navigational arrows stay in the right places</li>
+                  <li class="project-details-line">winning Grand Prize with my friend Alvin at the Priceline Hackathon for a <a href="https://www.youtube.com/watch?v=Ish32PtfFxA" target="_blank" class="link-color">project</a> that visualizes a customer's rental car trip on a map with optimized routes (afterwards we met with the CPO to discuss opportunities to ship in production!)</li>
+                </ul>
+              </p>
+              <p class="project-year">2019
+                <ul class="project-details">
+                  <li class="project-details-line">advocating usage of WebP (with Fastly configurations in the edge layer) to support lossness compression and faster loading of web images</li>
+                  <li class="project-details-line">supporting type safety by migrating Rental Car landing page to use TypeScript with updates to Webpack, Jest, TS, Babel configurations and migrating .js files to use .ts & .tsx</li>
+                  <li class="project-details-line">introducing "scroll to top" button at the bottom of the page</li>
+                  <li class="project-details-line">investigating drop on mobile homepage ad unit impressions and working with the marketing team to reload new Tealium rules</li>
+                  <li class="project-details-line">fixing a point of sale issue where users were seeing an international display on domestic searches after being sent from a deep link</li>
+                  <li class="project-details-line">refactoring "Car Type" filter to show/hide car types based on size and category</li>
+                  <li class="project-details-line">aligning the date format used on international point of search web pages and translated pages in listings and checkout</li>
+                </ul>
+              </p>
             </p>
-            <p class="project-summary">My friend and I also won grand prize at the 2020 Priceline Hackathon with for a <a href="https://www.youtube.com/watch?v=Ish32PtfFxA" target="_blank" class="link-color">project</a> that visualizes a customer's rental car trip on a map with optimized routes.</p>
           </div>
         </div>
         <div class="project-item">
