@@ -40,7 +40,7 @@
       </div>
       <div class="intro-block">
         <p>If you have somehow stumbled into this place, welcome!</p>
-        <p>Currently, I'm a <strong>senior software engineer</strong> working out of <strong>New York City</strong>.</span></p>
+        <p>Currently, I'm a senior software engineer working out of New York City.</span></p>
         <p class="subintro">What brought me into the tech scene and continue to fascinate me, are the open sharing of code and ideas and the creative problem-solving nature of software development.</p>
       </div>
     </div>
@@ -62,18 +62,19 @@
           </div>
           <div class="project-description">
             <p class="project-title">Priceline</p>
-            <p class="project-summary">As part of the Web UX team, I led the frontend architecture design and technical implementation of high-traffic, consumer-facing travel products (some featured during the CEO update!), including Non-Traditional Car Suppliers Onboarding, Trip Protection in Car and Flights, Universal/Unified Checkout Migration, Packages Full Listings with Unified Search, and Rental Car Upgrade in Checkout.</p>
+            <p class="project-summary">As part of the Web UX team, I led the frontend architecture design and technical implementation of high-traffic, consumer-facing travel products (some featured during the CEO update!), including Alternative Rental Car Supplier Onboarding, Trip Protection in Car and Flights, Packages Full Listings, Rental Car Upgrade in Checkout, and Legacy Cart to Universal Checkout Migration.</p>
             <p class="project-summary">This often involved initiating discussions with stakeholders, communicating across multiple engineering teams across the organization (as well as Business, Marketing, Product, Design, and Analytics), and serving as a technical product manager in creating a backlog of JIRA tickets with descriptions and acceptance criterias for project deliverables.</p>
-            <p class="project-summary">My most proud technical contributions include leading the React 18 migration, server-side rendering & hydration (process that restores the server-side rendered application on the client), and 12-Factor based web development initiatives by deep diving into ES6 JavaScript, TypeScript, Babel JavaScript Compiler, React (+Redux) JavaScript Library with Modern Hooks, Node (+Express) JavaScript Runtime, GraphQL (+Apollo API Platform) Query Language, Webpack Module Bundler, and Splunk/New Relic/GKE Stackdriver Logging & Monitoring.</p>
+            <p class="project-summary">My most proud technical contributions include leading the React 18 migration, server-side rendering & hydration (as a technique of using client-side JavaScript to add interactivity to server-rendered HTML), and 12-Factor based web development initiatives.</p>
+            <by class="project-summary">I enjoy deep diving into ES6 JavaScript, TypeScript, Babel JavaScript Compiler, React (+Redux) JavaScript Library with Modern Hooks, Node (+Express) JavaScript Runtime, GraphQL (+Apollo API Platform) Query Language, Webpack Module Bundler, and Splunk/New Relic/GKE Stackdriver Logging & Monitoring.</p>
             <p class="project-summary">In addition to making active code contributions, I automated development workflows with Github Actions and deployed features with Docker, Harness, and Codefresh (our most recent GitOps based delivery platform).</p>
             <p class="project-summary">I'm also a fan of integrating GenAI into the workspace. ChatGPT has been helpful when helping write unit tests and Codeium with autosuggesting code blocks.</p>
             <p class="project-summary">If you'd like to peek into some of my work, they include: 
               <p class="project-year">2024
                 <ul class="project-details">
-                  <li class="project-details-line">resolving react-dom hydration errors which allowed Rental Car frontend applications to be properly rendered server-side with ~80% reduction in error rates in New Relic production logs (which stopped PagerDuty alerts for our team!) - as a result our team no longer saw “uncaught runtime” errors during local development as well as “minified react errors” in production</li>
+                  <li class="project-details-line">resolving hydration errors for Rental Car frontend applications that led to <u>~80% reduction in error rates</u> in New Relic production logs (<u>and stopped persistent PagerDuty alerts for our team which often woke us up at 4am!</u>) - as a result we no longer saw “uncaught runtime” errors during local development as well as “minified react errors” in production</li>
                   <li class="project-details-line">upgrading our frontend applications to the React 18 ecosystem by deep diving into Webpack, Loadable Components, Static Server-Side Rendering vs Streaming Server-Side Rendering of HTML, Styled Components, and JavaScript Compilation with Babel</li>
                   <li class="project-details-line">designing technical roadmap of client business logic migration to GraphQL and setting guidelines together with the team</li>
-                  <li class="project-details-line">creating frontend MVP roadmap of non-traditional supplier onboarding and creating a backlog of engineering tasks</li>
+                  <li class="project-details-line">creating frontend MVP requirements & backlog of engineering tasks with acceptance criterias for Alternative Rental Car Supplier Onboarding and leading discussions with stakeholders</li>
                   <li class="project-details-line">updating github action workflows to auto-deploy on QA environments and enhancing developer productivity by shaving off 0.5-1hr of manual deploy time</li>
                   <li class="project-details-line">updating internal slack github action workflow so that engineers can set the base git branch and notify the changes against base branch on Slack</li>
                   <li class="project-details-line">leading Google Analytics 3 to 4 migration in coordination with the Analytics Team, improving event-driven data tracking of customer behaviors across products</li>
@@ -86,9 +87,10 @@
               <p class="project-year">2023
                 <ul class="project-details">
                   <li class="project-details-line">building the data sequence diagram and implementing solutions for the Car Upgrade in Checkout feature (multi-quarter project) that successfully launched with 4.6% conversion rate</li>
-                  <li class="project-details-line">refining frontend scope and requirements for Packages Full Listings (multi-quarter project) enabling existing Rental Cars listings to be featured during customers' Packages search</li>
-                  <li class="project-details-line">ramping up a junior engineer in her first 90 days of onboarding to make contributions across 3+ codebases to integrate special equipments pricing in checkout (child seats, ski lifts, etc) and collect commissions from suppliers</li>
+                  <li class="project-details-line">refining frontend scope and requirements for Packages Full Listings (multi-quarter project) which launched with 90% win probability and enabled existing Rental Cars listings to be featured during customers' Packages search</li>
+                  <li class="project-details-line">ramping up a junior engineer in her first 90 days of onboarding to make contributions across 3+ codebases to integrate special equipments pricing in checkout and collect commissions from suppliers, exceeding expected attach rate by ~10%</li>
                   <li class="project-details-line">creating utility functions that transform old data format to new Unified Search (for Packages Full Listings launch) & Checkout (for Car Upgrades launch) schemas</li>
+                  <li class="project-details-line">building a checkout reference document or "cheat sheet" for engineers working on Legacy Cart to Universal Checkout migration</li>
                   <li class="project-details-line">participating in hiring interviews for the co-op student program</li>
                 </ul>
               </p>
@@ -106,8 +108,8 @@
               <p class="project-year">2021
                 <ul class="project-details">
                   <li class="project-details-line">migrating our frontend apps from static to streaming server-side rendering for fast TTFB (note: in 2024 we had to revert back to static SSR due to Styled Components not being compatible with React 18 Streaming API)</li>
-                  <li class="project-details-line">advocating 12-factor app goals during on-prem to cloud migration by setting up backing services for frontend applications with environment variables (and by pushing updates to .env file, Webpack build configurations, Priceline internal development tool environment setups, Harness templates, and GKE stackdriver logs) - as a result our team was able to test changes in sandbox, on-prem, and cloud environments by easily switching backing services per environment</li>
-                  <li class="project-details-line">solving memory leak issues that caused Kubernetes pod restarts by investigating Splunk & New Relic garbage collection logs and updating DockerFile configuration (which stopped PagerDuty alerts for our team!)</li>
+                  <li class="project-details-line">advocating 12-factor app goals during on-prem to cloud migration by setting up backing services for frontend applications with environment variables (and by pushing updates to .env file, Webpack build configurations, Priceline internal development tool environment setups, Harness templates, and GKE stackdriver logs) - <u>as a result our team was able to test changes in sandbox, on-prem, and cloud environments by easily switching backing services per environment</u></li>
+                  <li class="project-details-line">solving memory leak issues that caused Kubernetes pod restarts by investigating Splunk & New Relic garbage collection logs and updating DockerFile configuration (<u>which stopped continuous PagerDuty alerts for our team!</u>)</li>
                   <li class="project-details-line">suggesting usage of lazy loading solutions to improve mobile filters and "load more" performance which decreated time to visually complete</li>
                   <li class="project-details-line">adding a reusable business promotions GraphQL operation to be shared across products</li>
                   <li class="project-details-line">investigating marketing pixels behaviors across pages to determine if they should be fired per every user interaction</li>
