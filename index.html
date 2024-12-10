@@ -24,7 +24,9 @@
     <div class="content">
       <span class="logo">RACHEL LEE</span>
       <ul class="links">
-        <li class="active">Work</li>
+        <li class="link link-work">Work</li>
+        <li class="link link-education">Education</li>
+        <li class="link link-social">Social</li>
       </ul>
     </div>
   </nav>
@@ -48,7 +50,7 @@
   <section class="work">
     <div class="projects-grid-container">
       <p class="intro-projects-grid">
-        Portfolio
+        Work
       </p>
       <div class="projects-grid">
         <div class="project-item">
@@ -135,7 +137,7 @@
                 <ul class="project-details">
                   <li>migrating our frontend apps from static to streaming server-side rendering for fast TTFB (note: in 2024 we had to revert back to static SSR due to Styled Components not being compatible with React 18 Streaming API)</li>
                   <li>advocating 12-factor app goals during on-prem to cloud migration by setting up backing services for frontend applications with environment variables (and by pushing updates to .env file, Webpack build configurations, Priceline internal development tool environment setups, Harness templates, and GKE stackdriver logs) - <u>as a result our team was able to test changes in sandbox, on-prem, and cloud environments by easily switching backing services per environment</u></li>
-                  <li>solving memory leak issues that caused Kubernetes pod restarts by investigating Splunk & New Relic garbage collection logs and updating DockerFile configuration (<u>which stopped PagerDuty alerts for our team!</u>)</li>
+                  <li>solving memory leak issues that caused Kubernetes pod restarts by investigating Splunk & New Relic garbage collection logs and updating DockerFile configuration (<u>which stopped PagerDuty alerts for our team</u>)</li>
                   <li>suggesting usage of lazy loading solutions to improve mobile filters and "load more" performance which decreated time to visually complete</li>
                   <li>adding a reusable business promotions GraphQL operation to be shared across products</li>
                   <li>investigating marketing pixels behaviors across pages to determine if they should be fired per every user interaction</li>
@@ -149,7 +151,7 @@
                   <li>adding new sorting logic for deep linked Kayak searches</li>
                   <li>implementing deep link when selecting counter locations from homepage Typeahead</li>
                   <li>building merchandising/promotion banners based on business requests and updating the carousel banners display to make the navigational arrows stay in the right places</li>
-                  <li>winning Grand Prize with my friend Alvin at the Priceline Hackathon for a <a href="https://www.youtube.com/watch?v=Ish32PtfFxA" target="_blank" class="link-color">project</a> that visualizes a customer's rental car trip on a map with optimized routes (afterwards we met with the CPO to discuss opportunities to ship in production!)</li>
+                  <li>winning Grand Prize with my friend Alvin at the Priceline Hackathon for a <a href="https://www.youtube.com/watch?v=Ish32PtfFxA" target="_blank" class="link-color">project</a> that visualizes a customer's rental car trip on a map with optimized routes (afterwards we met with the CPO to discuss opportunities to ship in production)</li>
                 </ul>
               </p>
               <p class="project-year">2019
@@ -187,7 +189,7 @@
             </p>
             <p class="project-summary">Moreover, I developed sample apps with web3.js, such as this <a href="https://github.com/hydrogen-dev/Hydro-Auth" target="_blank" class="link-color">code</a> which performs authentication via our smart contract. A detailed walk-through of the code is available <a href="https://medium.com/hydrogen-api/authenticating-on-the-blockchain-with-hydro-web3-js-3a7de9cc906b" target="_blank" class="link-color">here</a>.</p>
             <p class="project-summary">Some of my other projects include demos and admin & analytics tools interacting with our core financial API suite. Our team used React/Redux, Angular1, Node/Express, and C3.js on the frontend.</p>
-            <p class="project-summary">I also presented sales demos to potential clients and built technical prototypes at proof-of-concept workshops with other engineers (which included fun work trips to Chile which I am still thankful for!).</p>
+            <p class="project-summary">I also presented sales demos to potential clients and built technical prototypes at proof-of-concept workshops with other engineers (which included fun work trips to Chile which I am still thankful for).</p>
           </div>
         </div>
         <div class="project-item">
@@ -215,6 +217,30 @@
             <p class="project-summary">I built Patron's alpha product in a distributed team of engineers across the globe in 2015. I used Angular1 to build the user interface, deployed changes on Heroku, and reported directly to the CEO.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="education">
+    <div class="projects-grid-container">
+      <p class="intro-projects-grid">
+        Education
+      </p>
+      <div class="projects-grid">
+        <div class="project-item">
+          <div class="project-image">
+            <a href="https://duke.edu/" target="_blank">
+              <img src="images/duke_logo.jpeg" alt="Duke University Logo" class="project-logo">
+            </a>
+          </div>
+          <div class="project-description">
+            <p class="project-title">Duke University</p>
+            <p class="project-summary">B.A., International Comparative Studies and Japanese, Magna Cum Laude</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

@@ -65,10 +65,11 @@ body {
   color: #838994;
 }
 
-.top-navigation .links .active {
+.top-navigation .links .link {
   color: #4c5058;
   margin-left: 0;
   font-weight: 500;
+  margin-right: 10px;
 }
 
 .top-navigation .links li:hover, .top-navigation .links a:hover {
@@ -142,7 +143,7 @@ body {
 
 .intro-projects-grid {
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 700;
 }
 
@@ -196,6 +197,59 @@ body {
 }
 
 .work .project-title {
+  margin-top: 0em;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.education {
+  overflow: auto;
+}
+
+.education .projects-grid-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.education .project-image {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  text-align: right;
+  margin-top: 1.5em;
+}
+
+.education .project-logo {
+  height: 150px;
+}
+
+.education .project-description {
+  float: left;
+  width: 50%;
+  margin: 3em auto;
+}
+
+.education .project-summary {
+  line-height: 1.5em;
+  text-align: left;
+}
+
+.education .project-summary-details {
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.education .project-summary-details-list {
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.education .project-details {
+  line-height: 1.5em;
+  text-align: left;
+}
+
+.education .project-title {
   margin-top: 0em;
   font-weight: 600;
   font-size: 1.1em;
@@ -311,6 +365,29 @@ body {
     margin: 2em auto;
   }
   .work .project-title {
+    text-align: center;
+  }
+  .education .projects-grid-container {
+    width: 90%;
+  }
+  .education .project-item {
+    overflow: hidden;
+    width: 100%;
+  }
+  .education .project-image {
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .education .project-description {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 2em auto;
+  }
+  .education .project-title {
     text-align: center;
   }
 }
