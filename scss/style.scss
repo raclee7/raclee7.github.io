@@ -176,6 +176,10 @@ body {
   margin: 3em auto;
 }
 
+.work .project-subtitle {
+  font-style: italic;
+}
+
 .work .project-summary {
   line-height: 1.5em;
   text-align: left;
@@ -379,6 +383,11 @@ body {
 
   .work .project-title {
     text-align: center;
+  }
+
+  .work .project-subtitle {
+    text-align: center;
+    font-style: italic;
   }
 
   .education .projects-grid-container {
