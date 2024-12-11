@@ -6,12 +6,12 @@ $(document).ready(function () {
   })
   $(".link-education").click(function() {
       $('html,body').animate({
-          scrollTop: $(".education").offset().top},
+          scrollTop: $(".divider2").offset().top},
           'slow')
   })
   $(".link-social").click(function() {
       $('html,body').animate({
-          scrollTop: $(".social").offset().top},
+          scrollTop: $(".divider3").offset().top},
           'slow')
   })
 })
