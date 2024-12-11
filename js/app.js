@@ -14,4 +14,9 @@ $(document).ready(function () {
           scrollTop: $(".divider3").offset().top},
           'slow')
   })
+  $(".logo").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".top-navigation")},
+          'slow')
+    })
 })

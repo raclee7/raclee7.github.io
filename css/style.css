@@ -45,6 +45,10 @@ body {
   margin: 0 auto;
 }
 
+.top-navigation .logo:hover {
+  cursor: pointer;
+}
+
 .top-navigation .links {
   float: right;
   color: #838994;
