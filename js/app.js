@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $(".link-work").click(function() {
       $('html,body').animate({
-          scrollTop: $(".work").offset().top},
+          scrollTop: $(".divider").offset().top},
           'slow')
   })
   $(".link-education").click(function() {
