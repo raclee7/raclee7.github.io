@@ -219,20 +219,7 @@ body {
   margin: 0 auto;
 }
 
-.education .project-image {
-  float: left;
-  width: 30%;
-  margin-right: 5%;
-  text-align: right;
-  margin-top: 1.5em;
-}
-
-.education .project-logo {
-  height: 150px;
-}
-
 .education .project-description {
-  float: left;
   width: 50%;
   margin: 3em auto;
 }
@@ -385,13 +372,6 @@ body {
   .education .project-item {
     overflow: hidden;
     width: 100%;
-  }
-  .education .project-image {
-    display: block;
-    margin-bottom: 1em;
-    width: 100%;
-    height: 100%;
-    text-align: center;
   }
   .education .project-description {
     display: block;
