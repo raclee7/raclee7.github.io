@@ -132,10 +132,16 @@ body {
 }
 
 .intro-block {
-  width: 50%;
-  margin: 20px auto;
+  width: 70%;
+  margin: 20px auto 40px;
   text-align: center;
-  line-height: 2em;
+  line-height: 1.7em;
+}
+.intro-block p {
+  margin: 0 0 1em;
+}
+.intro-block p:last-child {
+  margin-bottom: 0;
 }
 .intro-block .strong {
   font-weight: 700;
@@ -148,6 +154,10 @@ body {
 .intro-projects-grid {
   text-align: center;
   font-size: 1.2em;
+  font-weight: 700;
+}
+
+.strong {
   font-weight: 700;
 }
 
@@ -202,6 +212,30 @@ body {
 .work .project-details {
   line-height: 1.5em;
   text-align: left;
+}
+
+.work .featured-work {
+  background-color: #f7f9fc;
+  border-left: 0.25em solid #6799FF;
+  padding: 1em 1.25em 0.4em;
+  margin: 1.5em 0;
+}
+
+.work .featured-work-label {
+  margin: 0 0 0.6em;
+  font-weight: 700;
+  font-size: 0.95em;
+  letter-spacing: 0.02em;
+  color: #4c5058;
+}
+
+.work .featured-work .project-year {
+  margin-bottom: 0.25em;
+  font-weight: 600;
+}
+
+.work .featured-work .project-details {
+  margin-top: 0.4em;
 }
 
 .work .project-title {
@@ -318,14 +352,28 @@ body {
 }
 
 @media only screen and (max-width: 70em) {
+  .top-navigation > .content {
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9em 0.4em;
+  }
   .logo {
-    top: 1.2em;
-    left: 1.5em;
+    position: static;
+    top: auto;
+    left: auto;
     letter-spacing: 0.03em;
   }
-  .links {
-    position: relative;
-    left: 8%;
+  .top-navigation .links {
+    position: static;
+    left: auto;
+    float: none;
+    margin-top: 0;
+    font-size: 0.78em;
+  }
+  .top-navigation .links li {
+    margin-left: 0.45em;
   }
   .intro-grid .profile-pic {
     left: 65%;
@@ -388,6 +436,9 @@ body {
   }
 }
 @media only screen and (max-width: 45em) {
+  .intro .container {
+    margin-top: 4.5em;
+  }
   .intro-grid .profile-pic {
     left: 40%;
   }

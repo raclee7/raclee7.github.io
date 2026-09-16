@@ -41,7 +41,11 @@
           <p class="intro-name">Hi, I'm <span class="strong">Rachel</span>.</p>
         </div>
       </div>
-      <div class="intro-block">I'm a Software Engineer currently based out of NYC.</div>
+      <div class="intro-block">
+        <p>I am on the Developer Experience platform team at Priceline focusing on web frontend and client architecture strategy.</p>
+        <p>My role involves managing our web monorepo, design system, and GraphQL layer to scale developer velocity across the organization with AI tooling.</p>
+        <p>My platform work is grounded in my experience building high-traffic, customer-facing booking flows from search to checkout on product teams.</p>
+      </div>
     </div>
   </section>
 
@@ -62,8 +66,24 @@
           <div class="project-description">
             <p class="project-title">Priceline</p>
             <p class="project-subtitle">Travel company under Booking Holdings</p>
-            <p class="project-summary">I led technical design and implementation of high-traffic, consumer-facing travel e-commerce products with ~XB in annual transactions and ~XMM visitors.</p>
-            <p class="project-summary">This work often involved initiating discussions with stakeholders, communicating across multiple teams across the organization, and creating backlogs of requirements for project deliverables in agile development workflows.</p>
+            <p class="project-summary">I work on the Developer Experience platform team, focusing on web frontend and client architecture: the web monorepo, design system, GraphQL layer, and AI tooling that scale developer velocity across product teams.</p>
+            <p class="project-summary">That platform work is grounded in years of leading technical design and implementation on high-traffic, customer-facing booking flows (~XB in annual transactions, ~XMM visitors), including stakeholder alignment and cross-team delivery.</p>
+            <div class="featured-work">
+              <p class="featured-work-label">Recent platform work</p>
+              <p class="project-year">Horizon Design System, React 19, and AI enablement</p>
+              <ul class="project-details">
+                <li>Paired Horizon Design System migration with React 19: leave unmaintained Priceline One dependencies and runtime <code>styled-components</code>, move styling to Tailwind at build time to protect load time and conversion</li>
+                <li>Built MCP servers and agent skills (<code>horizon-standard</code>, <code>horizon-upgrade</code>) with Storybook, Chrome DevTools, and Figma MCPs so teams can audit and refactor in their daily workflow</li>
+                <li>Led 7 workshops for 50+ developers across Accommodations, Mobility, Flights, Packages and Travel Services, Customer Growth, and Unified Search and Book; extended GitHub Actions and MCP setups into 8 external web apps</li>
+                <li>Reached 24 Horizon Design System components, 9 web apps, ~175 shared packages, and 6 product POM teams; aligned UXT and Design System committees on React 19, the React Compiler, and Server Components</li>
+              </ul>
+              <p class="project-year">Visual quality operating model</p>
+              <ul class="project-details">
+                <li>Scaled Chromatic from 8 projects (December 2025) to 38 projects in 2026 across the pcln-web monorepo and external web apps (4.75x)</li>
+                <li>Created <code>@pcln/chromatic-config</code> as the shared source of truth for project metadata, CI, and Storybook links</li>
+                <li>Enabled 60+ developers to contribute to 425+ merged Horizon Design System pull requests</li>
+              </ul>
+            </div>
             <p class="project-summary-details">I also gave tech talks at company-wide development showcases about these web development initiatives:
               <ul class="project-summary-details-list">
                 <li><a href="https://medium.com/@rach_lee/resolving-hydration-errors-in-server-side-rendered-react-applications-c2f09daff7e5" target="_blank" class="link-color">Server-side rendering & Hydration</a></li>
@@ -72,106 +92,65 @@
             </p>
             <p class="project-summary-details">My skill sets include:
               <ul class="project-summary-details-list">
-                <li>ES6 JavaScript</li>
-                <li>TypeScript</li>
-                <li>Babel JavaScript Compiler</li>
-                <li>React JavaScript Library with Context/Hooks</li>
-                <li>Redux State Management</li>
-                <li>Node JavaScript Runtime with Express Framework</li>
-                <li>GraphQL Query Language with Apollo API Platform</li>
-                <li>Webpack Module Bundler</li>
-                <li>Logging and Monitoring with Splunk/New Relic/GKE Stackdriver</li>
-                <li>Automating development workflows with Github Actions</li>
-                <li>Deployment with Docker/Harness/Codefresh</li>
-                <li>GenAI workspace integration with Cursor</li>
-                <li>Agent skills and MCPs</li>
+                <li><span class="strong">Core & architecture:</span> TypeScript, React 18/19, GraphQL with Apollo, Server Components / SSR, Node</li>
+                <li><span class="strong">Design systems & quality:</span> Tailwind CSS, Base UI, Storybook, Chromatic</li>
+                <li><span class="strong">Developer experience & AI:</span> MCP, agent skills, Cursor, GitHub Actions, monorepo management</li>
               </ul>
             </p>
-            <p class="project-summary">Here are my contributions grouped by year: 
+            <p class="project-summary">Here are my contributions grouped by year:
               <p class="project-year">2026
                 <ul class="project-details">
-                  <li>shipping Tailwind CSS & Base UI, Vaul, Embla based React components (e.g. Lightbox, PromoBanner) for a new Design System used across product teams</li>
-                  <li>creating Chromatic snapshots for new Design System to ensure development consistency and efficient design reviews</li>
-                  <li>introducing upgrade guide for the new <a href="https://horizon.corp.priceline.com" target="_blank" class="link-color">Design System</a> for migrating major versions documenting breaking changes, before/after code examples, and best practices</li>
-                  <li>maintaining Priceline's Typescript based Monorepo by fixing bugs related to unstable tests, workflows that block the CI for developers</li>
-                  <li>introducing monorepo-notifications workflow with Github Actions + Slack workflow for easier PR reviews and better developer experience in the monorepo</li>
-                  <li>leading workshops across portfolio teams on AI tooling such as Agent Skills and MCP, and setting up basic AI tooling in project codebases for teams (integrating with Claude Code, Cursor, etc)</li>
+                  <li>keeping the TypeScript monorepo unblocked (CI, tests) and adding GitHub Actions + Slack notifications for PR reviews</li>
                 </ul>
               </p>
               <p class="project-year">2025
                 <ul class="project-details">
-                  <li>building Tailwind CSS & Base UI, Vaul, Embla based React components (e.g. Carousel) for a new Design System used across product teams</li>
-                  <li>migrating from Styled Components and integrating Tailwind CSS and new Design System into web applications</li>
-                  <li>creating time-sensitive marketing promotions and filters (e.g. Cyber Monday and Seasonal Deals) in Hotel web applications</li>
-                  <li>reducing Rental Cars landing page's Largest Contentful Paint (LCP) metric by ~2 seconds by utilizing CDN assets and eager loading of the Hero background image</li>
+                  <li>building Horizon Design System components (including Carousel) and migrating web apps from styled-components to Tailwind</li>
+                  <li>shipping time-sensitive hotel marketing promotions and filters (Cyber Monday and Seasonal Deals)</li>
+                  <li>reducing Rental Cars landing page LCP by ~2 seconds with CDN assets and eager-loaded hero imagery</li>
                 </ul>
               </p>
               <p class="project-year">2024
                 <ul class="project-details">
-                  <li>leading an alternative Rental Cars supplier launch (multi-quarter project) by creating MVP requirements & backlog of engineering tasks and initiating discussions with stakeholders</li>
-                  <li>enhancing the Rental Cars map experience by creating map link per every vehicle pickup location - clicking on the link takes the user to map view where it highlights and auto-scrolls to the selected rate with an active map pin</li>
-                  <li>upgrading our web applications to the React 18 ecosystem by deep diving into Webpack, Loadable Components, Static Server-Side Rendering vs Streaming Server-Side Rendering of HTML, Styled Components, and JavaScript Compilation with Babel</li>
-                  <li>designing technical roadmap of client business logic migration to GraphQL and setting guidelines together with the team</li>
-                  <li>updating Github Action workflows to auto-deploy on QA environments and enhancing developer productivity by shaving off 0.5-1hr of manual deploy time</li>
-                  <li>updating internal slack Github Action workflow so that engineers can set the base git branch and notify the changes against base branch on Slack</li>
-                  <li>assisting with Google Analytics 3 to 4 migration in coordination with the Analytics Team, improving event-driven data tracking of customer behaviors across products</li>
-                  <li>handling internal server errors so that users are redirected to validation pages showing informative error messages based on error codes with options to redo the search</li>
-                  <li>advocating development of a shared vehicle listings card in Monorepo to be used across Rental Cars paths (Cross-Sell in Hotels and Flights, Upsell in Post Booking, Upgrade in Checkout, White Label, Packages, Standlone RC) </li>
-                  <li>proposing performance improvement plans in collaboration with Performance Guild (introducing Webpack module alias for aligning depedencies & multiple Webpack entry points for tree shaking & Streaming SSR workarounds with React 18 & Landing Background Image Download on First Paint & Stellate GraphQL Edge Partial Query Caching for caching API requests & Treo Lighthouse Pages with and without marketing scripts)</li>
-                  <li>participating in engineering management hiring interviews</li>
-                  <li>building a personality based & internal GenAI API powered trip recommendation quiz in a team of 5 at the Priceline Hackathon</li>
+                  <li>leading a multi-quarter alternative Rental Cars supplier launch, including MVP requirements, backlog, and stakeholder alignment</li>
+                  <li>upgrading web applications to React 18 (Webpack, Loadable Components, static vs streaming SSR, styled-components, Babel)</li>
+                  <li>designing the technical roadmap for migrating client business logic to GraphQL</li>
+                  <li>auto-deploying QA via GitHub Actions, saving 0.5–1 hour of manual deploy time per change</li>
+                  <li>advocating a shared vehicle listings card in the monorepo across Rental Cars paths (cross-sell, upsell, checkout, white label, packages)</li>
+                  <li>proposing performance plans with the Performance Guild (dependency alignment, tree shaking, SSR, GraphQL edge caching, Lighthouse)</li>
                 </ul>
               </p>
               <p class="project-year">2023
                 <ul class="project-details">
-                  <li>building the data sequence diagram and implementing solutions for the Car Upgrade in Checkout feature (multi-quarter project) that successfully launched with 4.6% conversion rate</li>
-                  <li>refining scopes and requirements for Packages Full Listings (multi-quarter project) which launched with 90% win probability and enabled Rental Cars listings to be featured during customers' Packages search</li>
-                  <li>onboarding a junior engineer and helping make contributions across 3+ codebases to integrate special equipments pricing in checkout and collect commissions from suppliers (which exceeded expected attach rate by ~10%)</li>
-                  <li>creating utility functions that transform old data format to new Unified Search (for Packages Full Listings launch) & Checkout (for Car Upgrades launch) schemas</li>
-                  <li>building a checkout reference document or "cheat sheet" for engineers working on Legacy Cart to Universal Checkout migration</li>
-                  <li>participating in hiring interviews for co-op student program</li>
+                  <li>shipping Car Upgrade in Checkout (multi-quarter) with a 4.6% conversion rate</li>
+                  <li>scoping Packages Full Listings, which launched with 90% win probability and featured Rental Cars in Packages search</li>
+                  <li>onboarding a junior engineer across 3+ codebases for special-equipment pricing in checkout (~10% above expected attach rate)</li>
                 </ul>
               </p>
               <p class="project-year">2022
                 <ul class="project-details">
-                  <li>serving as main point of contact for Rental Cars Web UX and iOS team in iOS team’s migration from using REST API to GraphQL</li>
-                  <li>leading Fullstory implementation across web apps to mask personal data in all PII elements</li>
-                  <li>fixing point of sale pricing bugs by investigating Stackdriver logs and updating the request-handler library in Monorepo</li>
-                  <li>developing some of the most used filters ("Deals", "Save Your Budget", "Price", and "Shuttle" filter)</li>
-                  <li>introducing "edit search" modal on mobile view</li>
-                  <li>supporting screen readers and web accessibility by updating meta viewport tags (removing user-scalable="no" parameters and maximum-scale parameter set to less than 5) and adding aria-label to elements</li>
+                  <li>serving as the Rental Cars Web UX point of contact for the iOS team’s REST to GraphQL migration</li>
+                  <li>leading Fullstory implementation across web apps to mask PII</li>
+                  <li>improving accessibility (viewport scaling and aria-labels) on customer-facing pages</li>
                 </ul>
               </p>
               <p class="project-year">2021
                 <ul class="project-details">
-                  <li>migrating our web apps from static to streaming server-side rendering for fast TTFB (note: in 2024 we reverted to static SSR due to Styled Components not being compatible with React 18 Streaming API)</li>
-                  <li>advocating 12-factor app goals during on-prem to cloud migration by setting up backing services for web applications with environment variables (and by pushing updates to .env file, Webpack build configurations, Priceline internal development tool environment setups, Harness templates, and GKE stackdriver logs) - <u>as a result our team was able to test changes in sandbox, on-prem, and cloud environments by easily switching backing services per environment</u></li>
-                  <li>solving memory leak issues that caused Kubernetes pod restarts by investigating Splunk & New Relic garbage collection logs and updating DockerFile configuration (<u>which stopped PagerDuty alerts for our team</u>)</li>
-                  <li>suggesting usage of lazy loading solutions to improve mobile filters and "load more" performance which decreated time to visually complete</li>
-                  <li>adding a reusable business promotions GraphQL operation to be shared across products</li>
-                  <li>investigating marketing pixels behaviors across pages to determine if they should be fired per every user interaction</li>
+                  <li>moving web apps to streaming SSR for faster TTFB (later reverted to static SSR because styled-components was incompatible with React 18 streaming)</li>
+                  <li>setting up 12-factor backing services during on-prem to cloud migration so teams could switch sandbox, on-prem, and cloud environments via configuration</li>
+                  <li>fixing a memory leak that caused Kubernetes pod restarts and stopped PagerDuty alerts for the team</li>
                 </ul>
               </p>
               <p class="project-year">2020
                 <ul class="project-details">
-                  <li>introducing Cypress end-to-end testing, setting up environment configurations, creating example spec files, and laying groundwork for cross-browser and A/B testing (note: in 2024 it was replaced by Mabl)</li>
-                  <li>resolving lat/long issues on map view to correctly show rental cars counter locations</li>
-                  <li>fixing map view so that map height is size of the screen and not larger than the customer's screen</li>
-                  <li>adding new sorting logic for deep linked Kayak searches</li>
-                  <li>implementing deep link when selecting counter locations from homepage Typeahead</li>
-                  <li>building merchandising/promotion banners based on business requests and updating the carousel banners display to make the navigational arrows stay in the right places</li>
-                  <li>winning Grand Prize with my friend Alvin at the Priceline Hackathon for a <a href="https://www.youtube.com/watch?v=Ish32PtfFxA" target="_blank" class="link-color">project</a> that visualizes a customer's rental cars trip on a map with optimized routes (afterwards we met with the CPO to discuss opportunities to ship in production)</li>
+                  <li>introducing Cypress end-to-end testing and environment setup (later replaced by Mabl)</li>
+                  <li>winning Grand Prize at the Priceline Hackathon for a <a href="https://www.youtube.com/watch?v=Ish32PtfFxA" target="_blank" class="link-color">project</a> that visualizes a rental cars trip on a map with optimized routes</li>
                 </ul>
               </p>
               <p class="project-year">2019
                 <ul class="project-details">
-                  <li>advocating usage of WebP (with Fastly configurations in the edge layer) to support lossness compression and faster loading of web images</li>
-                  <li>supporting type safety by migrating Rental Cars landing page to use TypeScript with updates to Webpack, Jest, TS, Babel configurations and migrating .js files to use .ts & .tsx</li>
-                  <li>introducing "scroll to top" button at the bottom of the page</li>
-                  <li>investigating drop on mobile homepage ad unit impressions and working with the marketing team to reload new Tealium rules</li>
-                  <li>fixing a deep linking point of sale issue where users were seeing international displays on domestic searches</li>
-                  <li>refactoring "Car Type" filter to show/hide car types based on size and category</li>
-                  <li>aligning the date format used on international point of search web pages and translated pages in listings and checkout</li>
+                  <li>migrating the Rental Cars landing page to TypeScript</li>
+                  <li>advocating WebP via Fastly at the edge for faster image loading</li>
                 </ul>
               </p>
             </p>
@@ -264,7 +243,7 @@
           </a>
         </li>
         <li>
-          <a href="https://linkedin.com/in/raclee7" target="_blank">
+          <a href="https://linkedin.com/in/rachlee012" target="_blank">
             <i class="fa fa-linkedin"></i>
           </a>
         </li>
