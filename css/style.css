@@ -486,6 +486,13 @@ html {
   }
 }
 
+#featured,
+#skills,
+#portfolio,
+#social {
+  scroll-margin-top: 5em;
+}
+
 .skip-link {
   position: absolute;
   left: -999px;
