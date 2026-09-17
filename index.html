@@ -14,249 +14,380 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Rachel Lee</title>
+  <meta name="description" content="Rachel Lee: Senior Software Engineer on Priceline's Developer Experience platform team. Design systems, React, GraphQL, and AI developer tooling.">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="top-navigation">
+  <span id="top"></span>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <nav class="top-navigation" aria-label="Primary">
     <div class="content">
-      <span class="logo">RACHEL LEE</span>
+      <a class="logo" href="#top">RACHEL LEE</a>
       <ul class="links">
-        <li class="link link-work">Portfolio</li>
-        <li class="link link-education">Education</li>
-        <li class="link link-social">Social</li>
+        <li><a class="link" href="#featured">Highlights</a></li>
+        <li><a class="link" href="#skills">Skills</a></li>
+        <li><a class="link" href="#portfolio">Portfolio</a></li>
+        <li><a class="link" href="#social">Social</a></li>
       </ul>
     </div>
   </nav>
 
-  <section class="intro">
-    <div class="container">
-      <div class="intro-grid">
-        <div class="intro-grid-item pic">
-          <img width="100px" class="img-circle profile-pic" src="images/profile_pic.jpg" alt="rachel_lee_profile_picture">
-        </div>
-        <div class="intro-grid-item name">
-          <p class="intro-name">Hi, I'm <span class="strong">Rachel</span>.</p>
-        </div>
-      </div>
-      <div class="intro-block">
-        <p>I am on the Developer Experience platform team at Priceline focusing on web frontend and client architecture strategy.</p>
-        <p>My role involves managing our web monorepo, design system, and GraphQL layer to scale developer velocity across the organization with AI tooling.</p>
-        <p>My platform work is grounded in my experience building high-traffic, customer-facing booking flows from search to checkout on product teams.</p>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <section class="work">
-    <div class="projects-grid-container">
-      <p class="intro-projects-grid">
-        Portfolio
-      </p>
-      <div class="projects-grid">
-        <div class="project-item">
-          <div class="project-image">
-            <a href="https://www.priceline.com" target="_blank">
-              <img src="images/priceline_logo.png" alt="Priceline Logo" class="project-logo">
-            </a>
+  <main id="main">
+    <section class="intro">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="intro-grid-item pic">
+            <img width="100px" class="img-circle profile-pic" src="images/profile_pic.jpg" alt="Portrait of Rachel Lee">
           </div>
-          <div class="project-description">
-            <p class="project-title">Priceline</p>
-            <p class="project-subtitle">Travel company under Booking Holdings</p>
-            <p class="project-summary">I work on the Developer Experience platform team, focusing on web frontend and client architecture: the web monorepo, design system, GraphQL layer, and AI tooling that scale developer velocity across product teams.</p>
-            <p class="project-summary">That platform work is grounded in years of leading technical design and implementation on high-traffic, customer-facing booking flows (~XB in annual transactions, ~XMM visitors), including stakeholder alignment and cross-team delivery.</p>
-            <div class="featured-work">
-              <p class="featured-work-label">Recent platform work</p>
-              <p class="project-year">Horizon Design System, React 19, and AI enablement</p>
-              <ul class="project-details">
-                <li>Paired Horizon Design System migration with React 19: leave unmaintained Priceline One dependencies and runtime <code>styled-components</code>, move styling to Tailwind at build time to protect load time and conversion</li>
-                <li>Built MCP servers and agent skills (<code>horizon-standard</code>, <code>horizon-upgrade</code>) with Storybook, Chrome DevTools, and Figma MCPs so teams can audit and refactor in their daily workflow</li>
-                <li>Led 7 workshops for 50+ developers across Accommodations, Mobility, Flights, Packages and Travel Services, Customer Growth, and Unified Search and Book; extended GitHub Actions and MCP setups into 8 external web apps</li>
-                <li>Reached 24 Horizon Design System components, 9 web apps, ~175 shared packages, and 6 product POM teams; aligned UXT and Design System committees on React 19, the React Compiler, and Server Components</li>
-              </ul>
-              <p class="project-year">Visual quality operating model</p>
-              <ul class="project-details">
-                <li>Scaled Chromatic from 8 projects (December 2025) to 38 projects in 2026 across the pcln-web monorepo and external web apps (4.75x)</li>
-                <li>Created <code>@pcln/chromatic-config</code> as the shared source of truth for project metadata, CI, and Storybook links</li>
-                <li>Enabled 60+ developers to contribute to 425+ merged Horizon Design System pull requests</li>
-              </ul>
+          <div class="intro-grid-item name">
+            <h1 class="intro-name">Hi, I'm <span class="strong">Rachel</span>.</h1>
+            <p class="intro-role">Senior Software Engineer, Developer Experience @ Priceline</p>
+          </div>
+        </div>
+        <div class="intro-block hero-card">
+          <p class="hero-eyebrow">A little about me</p>
+          <p class="about-intro">I am on the Developer Experience platform team at Priceline focusing on web frontend and client architecture strategy.</p>
+          <div class="about-facets">
+            <div class="about-facet about-facet--blue">
+              <span class="about-facet-icon" aria-hidden="true">🧭</span>
+              <p class="about-facet-title">Platform Strategy</p>
+              <p class="about-facet-desc">Web monorepo, design system, and a unified client data layer for the whole org</p>
             </div>
-            <p class="project-summary-details">I also gave tech talks at company-wide development showcases about these web development initiatives:
-              <ul class="project-summary-details-list">
-                <li><a href="https://medium.com/@rach_lee/resolving-hydration-errors-in-server-side-rendered-react-applications-c2f09daff7e5" target="_blank" class="link-color">Server-side rendering & Hydration</a></li>
-                <li><a href="https://medium.com/@rach_lee/setting-up-backing-services-in-frontend-applications-f9486b6d62d3" target="_blank" class="link-color">Setting Up Backing Services For 12-Factor App Development</a></li>
-              </ul>
-            </p>
-            <p class="project-summary-details">My skill sets include:
-              <ul class="project-summary-details-list">
-                <li><span class="strong">Core & architecture:</span> TypeScript, React 18/19, GraphQL with Apollo, Server Components / SSR, Node</li>
-                <li><span class="strong">Design systems & quality:</span> Tailwind CSS, Base UI, Storybook, Chromatic</li>
-                <li><span class="strong">Developer experience & AI:</span> MCP, agent skills, Cursor, GitHub Actions, monorepo management</li>
-              </ul>
-            </p>
-            <p class="project-summary">Here are my contributions grouped by year:
-              <p class="project-year">2026
-                <ul class="project-details">
-                  <li>keeping the TypeScript monorepo unblocked (CI, tests) and adding GitHub Actions + Slack notifications for PR reviews</li>
-                </ul>
-              </p>
-              <p class="project-year">2025
-                <ul class="project-details">
-                  <li>building Horizon Design System components (including Carousel) and migrating web apps from styled-components to Tailwind</li>
-                  <li>shipping time-sensitive hotel marketing promotions and filters (Cyber Monday and Seasonal Deals)</li>
-                  <li>reducing Rental Cars landing page LCP by ~2 seconds with CDN assets and eager-loaded hero imagery</li>
-                </ul>
-              </p>
-              <p class="project-year">2024
-                <ul class="project-details">
-                  <li>leading a multi-quarter alternative Rental Cars supplier launch, including MVP requirements, backlog, and stakeholder alignment</li>
-                  <li>upgrading web applications to React 18 (Webpack, Loadable Components, static vs streaming SSR, styled-components, Babel)</li>
-                  <li>designing the technical roadmap for migrating client business logic to GraphQL</li>
-                  <li>auto-deploying QA via GitHub Actions, saving 0.5–1 hour of manual deploy time per change</li>
-                  <li>advocating a shared vehicle listings card in the monorepo across Rental Cars paths (cross-sell, upsell, checkout, white label, packages)</li>
-                  <li>proposing performance plans with the Performance Guild (dependency alignment, tree shaking, SSR, GraphQL edge caching, Lighthouse)</li>
-                </ul>
-              </p>
-              <p class="project-year">2023
-                <ul class="project-details">
-                  <li>shipping Car Upgrade in Checkout (multi-quarter) with a 4.6% conversion rate</li>
-                  <li>scoping Packages Full Listings, which launched with 90% win probability and featured Rental Cars in Packages search</li>
-                  <li>onboarding a junior engineer across 3+ codebases for special-equipment pricing in checkout (~10% above expected attach rate)</li>
-                </ul>
-              </p>
-              <p class="project-year">2022
-                <ul class="project-details">
-                  <li>serving as the Rental Cars Web UX point of contact for the iOS team’s REST to GraphQL migration</li>
-                  <li>leading Fullstory implementation across web apps to mask PII</li>
-                  <li>improving accessibility (viewport scaling and aria-labels) on customer-facing pages</li>
-                </ul>
-              </p>
-              <p class="project-year">2021
-                <ul class="project-details">
-                  <li>moving web apps to streaming SSR for faster TTFB (later reverted to static SSR because styled-components was incompatible with React 18 streaming)</li>
-                  <li>setting up 12-factor backing services during on-prem to cloud migration so teams could switch sandbox, on-prem, and cloud environments via configuration</li>
-                  <li>fixing a memory leak that caused Kubernetes pod restarts and stopped PagerDuty alerts for the team</li>
-                </ul>
-              </p>
-              <p class="project-year">2020
-                <ul class="project-details">
-                  <li>introducing Cypress end-to-end testing and environment setup (later replaced by Mabl)</li>
-                  <li>winning Grand Prize at the Priceline Hackathon for a <a href="https://www.youtube.com/watch?v=Ish32PtfFxA" target="_blank" class="link-color">project</a> that visualizes a rental cars trip on a map with optimized routes</li>
-                </ul>
-              </p>
-              <p class="project-year">2019
-                <ul class="project-details">
-                  <li>migrating the Rental Cars landing page to TypeScript</li>
-                  <li>advocating WebP via Fastly at the edge for faster image loading</li>
-                </ul>
-              </p>
-            </p>
+            <div class="about-facet about-facet--violet">
+              <span class="about-facet-icon" aria-hidden="true">🤖</span>
+              <p class="about-facet-title">AI-Powered Velocity</p>
+              <p class="about-facet-desc">Scaling developer speed with modern AI tooling</p>
+            </div>
+            <div class="about-facet about-facet--amber">
+              <span class="about-facet-icon" aria-hidden="true">🛠️</span>
+              <p class="about-facet-title">Product Engineering Focus</p>
+              <p class="about-facet-desc">Engineering the product details that drive accessibility and conversion</p>
+            </div>
           </div>
+          <p class="hero-footnote">Grounded in years leading high-traffic, customer-facing booking flows from search to checkout on product teams.</p>
         </div>
-        <div class="project-item">
-          <div class="project-image">
-            <a href="https://www.hydrogenplatform.com/hydro" target="_blank">
-              <img src="images/hydrogen_logo.jpg" alt="Hydrogen Logo" class="project-logo">
-            </a>
+      </div>
+    </section>
+
+    <section class="featured" id="featured">
+      <div class="featured-container">
+        <h2 class="intro-projects-grid">Featured Initiatives</h2>
+        <div class="featured-cards">
+          <div class="featured-card">
+            <h3 class="featured-card-title">Design System &amp; Brand Strategy</h3>
+            <p class="featured-card-summary">Paired an enterprise-wide design system migration and brand refresh with React 19 readiness, retiring a legacy internal UI framework for a unified, consistent user experience across pages and faster, conversion-driving load times.</p>
+            <div class="featured-card-tags">
+              <span class="tag">React 19</span>
+              <span class="tag">Design Systems</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">styled-components</span>
+              <span class="tag">Stakeholder Alignment</span>
+              <span class="tag">Technical Writing</span>
+            </div>
           </div>
-          <div class="project-description">
-            <p class="project-title">Hydrogen</p>
-            <p class="project-subtitle">B2B SaaS fintech & blockchain startup, early stage</p>
-            <p class="project-summary">I was part of the core team that built "Hydro: Security & Identity," an Ethereum blockchain-based identity management app (dApp). It launched for iOS and Android in July 2018.</p>
-            <p class="project-summary">Read more about my experience with the team on developing the app with React Native <a href="https://medium.com/hydrogen-api/developing-the-hydro-mobile-app-b0945f610e56" target="_blank" class="link-color">here</a>.
-            <p class="project-summary">How the 2FA app works:
-              <ul class="project-details">
-                <li>It creates a secure Ethereum wallet on your phone and saves your public Ethereum address mapped to a HydroID on the Ethereum blockchain.</li>
-                <li>12 seed words are also randomly generated at the time to restore your wallet in case you replace or lose your phone.</li>
-                <li>Every time you authenticate with a linked website by entering a random 6-digit code that is shown on the website into the mobile app, a signed transaction is initiated on the blockchain, our immutable public ledger.</li>
-                <li>Finally, the API checks if the smart contract has validated the transaction and authenticates your identity with the website.</li>
-                <li>Touch ID, facial recognition, and PIN protection are also features offered by the Hydro app to provide you an extra layer of security.</li>
-              </ul>
-            </p>
-            <p class="project-summary">Moreover, I developed sample apps with web3.js, such as this <a href="https://github.com/hydrogen-dev/Hydro-Auth" target="_blank" class="link-color">code</a> which performs authentication via our smart contract. A detailed walk-through of the code is available <a href="https://medium.com/hydrogen-api/authenticating-on-the-blockchain-with-hydro-web3-js-3a7de9cc906b" target="_blank" class="link-color">here</a>.</p>
-            <p class="project-summary">Some of my other projects include demos and admin & analytics tools interacting with our core financial API suite. Our team used React/Redux, Angular1, Node/Express, and C3.js.</p>
-            <p class="project-summary">I also presented sales demos to potential clients and built technical prototypes at proof-of-concept workshops (which included fun work trips to Chile which I am still thankful for).</p>
+          <div class="featured-card">
+            <h3 class="featured-card-title">Scaling AI Tooling</h3>
+            <p class="featured-card-summary">Built custom Model Context Protocol (MCP) servers and AI agent skills integrated with design and browser tooling. Rolled out across the monorepo, then extended to 8 web apps alongside the monorepo setup. Led 7 workshops guiding 50+ developers through hands-on adoption.</p>
+            <div class="featured-card-tags">
+              <span class="tag">MCP</span>
+              <span class="tag">Agent Skills</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">Design-to-Code</span>
+              <span class="tag">Workshops</span>
+              <span class="tag">Cross-Team Enablement</span>
+              <span class="tag">Mentorship</span>
+            </div>
           </div>
-        </div>
-        <div class="project-item">
-          <div class="project-image">
-            <a href="https://www.hedgeable.com" target="_blank">
-              <img src="images/hedgeable_logo.jpg" alt="Hedgeable logo" class="project-logo">
-            </a>
-          </div>
-          <div class="project-description">
-            <p class="project-title">Hedgeable</p>
-            <p class="project-subtitle">B2C fintech startup, early stage</p>
-            <p class="project-summary">I was the hired as the 7th employee to join Hedgeable in 2016 while Hedgeable was a seed stage startup. I reported directly to the CTO while we grew to 30+ employees.</p>
-            <p class="project-summary">My primary role was building the interfaces of our new investing and wealth management platform. I scaffolded the Angular2 & Node/Express single page application based on the original JavaScript & PHP multi page application.
-            <p class="project-summary">Some of the things I built with our team of engineers and designers include data visualizations of client portfolios in d3.js and c3.js, landing page, session management with Redis, and user interfaces of the two-factor authentication app.</p>
-            <p class="project-summary">Company closed the investing platform in 2018 and spinned off to a B2B fintech platform called Hydrogen.</p>
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-image">
-            <a href="http://www.musae.me" target="_blank">
-              <img src="images/musae_logo.jpg" alt="Musae logo" class="project-logo">
-            </a>
-          </div>
-          <div class="project-description">
-            <p class="project-title">Patron</p>
-            <p class="project-subtitle">Arts network startup, early stage</p>
-            <p class="project-summary">I built Patron's alpha product in a globally distributed team of engineers in 2015. I used Angular1 & Node to build the web platform, deployed changes on Heroku, and reported directly to the CEO.</p>
+          <div class="featured-card">
+            <h3 class="featured-card-title">Visual Quality at Scale</h3>
+            <p class="featured-card-summary">Scaled visual regression testing infrastructure (Chromatic) from 8 to 38 projects (4.75x) across the monorepo and external apps, leading 60+ developers to ship 425+ merged design system pull requests through a shared internal configuration package.</p>
+            <div class="featured-card-tags">
+              <span class="tag">Chromatic</span>
+              <span class="tag">Storybook</span>
+              <span class="tag">Rush Monorepo</span>
+              <span class="tag">Org-Wide Adoption</span>
+              <span class="tag">Mentorship</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <hr class="divider divider2">
-
-  <section class="education">
-    <div class="projects-grid-container">
-      <p class="intro-projects-grid">
-        Education
-      </p>
-      <div class="projects-grid">
-        <div class="project-item">
-          <div class="project-description">
-            <p class="project-title">Duke University</p>
-            <p class="project-subtitle">B.A., International Comparative Studies, Magna Cum Laude</p>
+    <section class="expertise" id="skills">
+      <div class="expertise-container">
+        <div class="expertise-grid">
+          <div class="expertise-col">
+            <h2 class="intro-projects-grid">Skills</h2>
+            <div class="skills-groups">
+              <div class="skills-group">
+                <h3 class="skills-group-title">Frontend Architecture</h3>
+                <div class="skills-pills">
+                  <span class="skill-pill">TypeScript</span>
+                  <span class="skill-pill">React 18/19</span>
+                  <span class="skill-pill">GraphQL (Apollo)</span>
+                  <span class="skill-pill">Server Side Rendering</span>
+                  <span class="skill-pill">Node</span>
+                  <span class="skill-pill">Redux.js</span>
+                  <span class="skill-pill">Rush Monorepo</span>
+                </div>
+              </div>
+              <div class="skills-group">
+                <h3 class="skills-group-title">Design Systems &amp; Styling</h3>
+                <div class="skills-pills">
+                  <span class="skill-pill">Tailwind CSS</span>
+                  <span class="skill-pill">Base UI</span>
+                  <span class="skill-pill">Storybook</span>
+                  <span class="skill-pill">Chromatic</span>
+                  <span class="skill-pill">styled-components</span>
+                </div>
+              </div>
+              <div class="skills-group">
+                <h3 class="skills-group-title">AI Tooling</h3>
+                <div class="skills-pills">
+                  <span class="skill-pill">MCP</span>
+                  <span class="skill-pill">Agent Skills</span>
+                  <span class="skill-pill">Claude Code</span>
+                  <span class="skill-pill">Cursor</span>
+                  <span class="skill-pill">GitHub Actions</span>
+                  <span class="skill-pill">Codefresh</span>
+                </div>
+              </div>
+              <div class="skills-group">
+                <h3 class="skills-group-title">Infrastructure &amp; Cloud</h3>
+                <div class="skills-pills">
+                  <span class="skill-pill">Kubernetes</span>
+                  <span class="skill-pill">Docker</span>
+                  <span class="skill-pill">Google Cloud Platform</span>
+                  <span class="skill-pill">CI/CD</span>
+                  <span class="skill-pill">Fastly / CDN</span>
+                </div>
+              </div>
+              <div class="skills-group">
+                <h3 class="skills-group-title">Leadership &amp; Communication</h3>
+                <div class="skills-pills">
+                  <span class="skill-pill">Technical Writing</span>
+                  <span class="skill-pill">Public Speaking</span>
+                  <span class="skill-pill">Workshops</span>
+                  <span class="skill-pill">Mentorship</span>
+                  <span class="skill-pill">Collaboration</span>
+                  <span class="skill-pill">Stakeholder Alignment</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="expertise-col">
+            <h2 class="intro-projects-grid">Writing</h2>
+            <ul class="writing-list">
+              <li class="writing-item">
+                <a class="writing-title" href="https://medium.com/stackademic/resolving-hydration-errors-in-server-side-rendered-react-applications-c2f09daff7e5" target="_blank" rel="noopener noreferrer">Server-side Rendering &amp; Hydration</a>
+                <p class="writing-excerpt">Tracking down hydration mismatches in production React apps, and the fixes that cut error rates by ~80%.</p>
+                <p class="writing-meta">Medium · Stackademic</p>
+              </li>
+              <li class="writing-item">
+                <a class="writing-title" href="https://medium.com/stackademic/setting-up-backing-services-in-frontend-applications-f9486b6d62d3" target="_blank" rel="noopener noreferrer">Backing Services for 12-Factor Apps</a>
+                <p class="writing-excerpt">Setting up backing services so teams could switch sandbox, on-prem, and cloud environments via configuration.</p>
+                <p class="writing-meta">Medium · Stackademic</p>
+              </li>
+              <li class="writing-item">
+                <a class="writing-title" href="https://medium.com/hydrogen-api/developing-the-hydro-mobile-app-b0945f610e56" target="_blank" rel="noopener noreferrer">Developing the Hydro Mobile App</a>
+                <p class="writing-excerpt">Behind the scenes of building a blockchain-based two-factor authentication app in React Native.</p>
+                <p class="writing-meta">Medium · Hydrogen</p>
+              </li>
+              <li class="writing-item">
+                <a class="writing-title" href="https://medium.com/hydrogen-api/authenticating-on-the-blockchain-with-hydro-web3-js-3a7de9cc906b" target="_blank" rel="noopener noreferrer">Authenticating on the Blockchain with web3.js</a>
+                <p class="writing-excerpt">A code walkthrough of authenticating users against a smart contract with web3.js.</p>
+                <p class="writing-meta">Medium · Hydrogen</p>
+              </li>
+            </ul>
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
+
+    <hr class="divider">
+
+    <section class="work" id="portfolio">
+      <div class="projects-grid-container">
+        <h2 class="intro-projects-grid">Portfolio</h2>
+
+        <div class="company-card company-card--featured company-card--priceline">
+          <div class="company-card-header">
+            <img src="images/priceline_logo.png" alt="" class="company-logo">
+            <div>
+              <h3 class="company-name"><a href="https://www.priceline.com" target="_blank" rel="noopener noreferrer">Priceline</a></h3>
+              <p class="company-meta">Developer Experience Platform · 2019–Present</p>
+            </div>
+          </div>
+          <p class="company-summary">Own platform strategy across the monorepo, design system, and GraphQL layer, powering 9 apps and 60+ engineers org-wide.</p>
+
+          <div class="achievement-badge">
+            <span class="achievement-badge-icon" aria-hidden="true">🏆</span>
+            <div>
+              <p class="achievement-badge-title">Hackathon Grand Prize, 2020</p>
+              <p class="achievement-badge-desc">Won Grand Prize out of 19 teams, in collaboration with Alvin Tang, for an interactive mapping feature that visualizes customer trip itineraries with real-time route optimization.</p>
+            </div>
+          </div>
+
+          <ul class="impact-list">
+            <li>Resolved production hydration errors across client-facing React apps, cutting error rates by ~80% and initial load time by ~15%, and eliminating recurring PagerDuty alerts that had been waking up on-call engineers. <a href="https://medium.com/stackademic/resolving-hydration-errors-in-server-side-rendered-react-applications-c2f09daff7e5" target="_blank" rel="noopener noreferrer">Read the write-up</a></li>
+            <li>Led an enterprise-wide design system migration paired with React 19 adoption, retiring a legacy internal UI framework in favor of Tailwind CSS</li>
+            <li>Built custom Model Context Protocol (MCP) servers and AI agent skills, rolled out across the monorepo and extended to 8 web apps alongside it. Trained 50+ engineers in 7 workshops</li>
+            <li>Scaled visual regression testing infrastructure (Chromatic) 4.75x (8 → 38 projects), unlocking 425+ merged pull requests</li>
+            <li>Set up 12-factor backing services during an on-prem-to-cloud migration, letting teams switch environments via configuration. <a href="https://medium.com/stackademic/setting-up-backing-services-in-frontend-applications-f9486b6d62d3" target="_blank" rel="noopener noreferrer">Read the write-up</a></li>
+          </ul>
+
+          <div class="featured-card-tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">React</span>
+            <span class="tag">GraphQL</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">Kubernetes</span>
+          </div>
+
+          <details class="year-details">
+            <summary class="year-details-summary">See year-by-year details</summary>
+            <div class="mini-timeline">
+              <div class="mini-timeline-item">
+                <span class="mini-timeline-year">2026</span>
+                <p class="mini-timeline-desc">Led an enterprise-wide design system migration paired with React 19 adoption, scaled AI/MCP tooling org-wide, and grew automated visual regression coverage 4.75x. Also kept the TypeScript monorepo unblocked through disciplined CI and test ownership, and introduced GitHub Actions and Slack notifications that sped up PR reviews org-wide.</p>
+              </div>
+              <div class="mini-timeline-item">
+                <span class="mini-timeline-year">2025</span>
+                <p class="mini-timeline-desc">Built new design system components (including a Carousel) adopted by teams across dozens of pages, migrated apps from styled-components to Tailwind, and cut Rental Cars landing-page load time by ~2 seconds.</p>
+              </div>
+              <div class="mini-timeline-item">
+                <span class="mini-timeline-year">2024</span>
+                <p class="mini-timeline-desc">Led a multi-quarter Rental Cars supplier launch, upgraded apps to React 18, designed the GraphQL migration roadmap, and automated QA deploys.</p>
+              </div>
+              <div class="mini-timeline-item">
+                <span class="mini-timeline-year">2023</span>
+                <p class="mini-timeline-desc">Shipped Car Upgrade in Checkout at 4.6% conversion, scoped Packages Full Listings at a 90% win probability, and mentored co-op students and junior-to-mid-level engineers across 3+ codebases.</p>
+              </div>
+              <div class="mini-timeline-item">
+                <span class="mini-timeline-year">2022</span>
+                <p class="mini-timeline-desc">Drove the iOS team's REST-to-GraphQL migration as Web UX point of contact, led Fullstory PII-masking rollout, and improved accessibility across customer-facing pages.</p>
+              </div>
+              <div class="mini-timeline-item">
+                <span class="mini-timeline-year">2021</span>
+                <p class="mini-timeline-desc">Migrated to streaming SSR for faster TTFB, built 12-factor backing services for the on-prem-to-cloud migration, and fixed a memory leak causing Kubernetes pod restarts.</p>
+              </div>
+              <div class="mini-timeline-item">
+                <span class="mini-timeline-year">2020</span>
+                <p class="mini-timeline-desc">Introduced Cypress end-to-end testing (later replaced by Mabl), plus the hackathon win above.</p>
+              </div>
+              <div class="mini-timeline-item">
+                <span class="mini-timeline-year">2019</span>
+                <p class="mini-timeline-desc">Migrated the Rental Cars landing page to TypeScript and advocated WebP delivery via Fastly for faster image loads.</p>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <h3 class="portfolio-subheading">Earlier Roles</h3>
+        <div class="company-grid">
+          <div class="company-card company-card--hydrogen">
+            <div class="company-card-header">
+              <img src="images/hydrogen_logo.jpg" alt="" class="company-logo">
+              <div>
+                <h4 class="company-name"><a href="https://www.hydrogenplatform.com/hydro" target="_blank" rel="noopener noreferrer">Hydrogen</a></h4>
+                <p class="company-meta">B2B Fintech &amp; Blockchain · 2018</p>
+              </div>
+            </div>
+            <p class="company-summary">Core team member building "Hydro: Security &amp; Identity," an Ethereum-based 2FA identity app that shipped on iOS and Android.</p>
+            <ul class="impact-list">
+              <li>Shipped a blockchain-based two-factor authentication app (React Native) to iOS and Android. <a href="https://medium.com/hydrogen-api/developing-the-hydro-mobile-app-b0945f610e56" target="_blank" rel="noopener noreferrer">Read how we built it</a></li>
+              <li>Built and documented decentralized app authentication flows using web3.js. <a href="https://medium.com/hydrogen-api/authenticating-on-the-blockchain-with-hydro-web3-js-3a7de9cc906b" target="_blank" rel="noopener noreferrer">Read the technical deep dive</a></li>
+              <li>Presented sales demos and built prototypes at client &amp; partner workshops</li>
+            </ul>
+            <div class="featured-card-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">web3.js</span>
+              <span class="tag">Ethereum</span>
+              <span class="tag">Workshops</span>
+              <span class="tag">Client-Facing Communication</span>
+              <span class="tag">Early-Stage Startups</span>
+            </div>
+          </div>
+
+          <div class="company-card company-card--hedgeable">
+            <div class="company-card-header">
+              <img src="images/hedgeable_logo.jpg" alt="" class="company-logo">
+              <div>
+                <h4 class="company-name"><a href="https://www.hedgeable.com" target="_blank" rel="noopener noreferrer">Hedgeable</a></h4>
+                <p class="company-meta">B2C Fintech, Seed Stage · 2016–2018</p>
+              </div>
+            </div>
+            <p class="company-summary">Joined as employee #7 at a seed-stage wealth management startup, reporting to the CTO through 30+ person growth, later spun off into Hydrogen.</p>
+            <ul class="impact-list">
+              <li>Scaffolded the Angular2 + Node/Express SPA rebuilding a legacy PHP platform</li>
+              <li>Built client portfolio data visualizations with D3.js and C3.js</li>
+              <li>Shipped session management (Redis) and the 2FA app's UI</li>
+            </ul>
+            <div class="featured-card-tags">
+              <span class="tag">Angular2</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">D3.js</span>
+              <span class="tag">Stakeholder Alignment</span>
+              <span class="tag">Founding Team Collaboration</span>
+              <span class="tag">Early-Stage Startups</span>
+            </div>
+          </div>
+
+          <div class="company-card company-card--patron">
+            <div class="company-card-header">
+              <img src="images/musae_logo.jpg" alt="" class="company-logo">
+              <div>
+                <h4 class="company-name"><a href="http://www.musae.me" target="_blank" rel="noopener noreferrer">Patron</a></h4>
+                <p class="company-meta">Arts Network, Seed Stage · 2015</p>
+              </div>
+            </div>
+            <p class="company-summary">Built the alpha product for an arts-network startup with a globally distributed team, reporting directly to the CEO.</p>
+            <ul class="impact-list">
+              <li>Built the web platform end-to-end with Angular1 and Node, alongside a globally distributed team of engineers and designers</li>
+              <li>Deployed and iterated quickly using Heroku, shipping the startup's alpha product from idea to launch</li>
+            </ul>
+            <div class="featured-card-tags">
+              <span class="tag">AngularJS</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Heroku</span>
+              <span class="tag">Stakeholder Alignment</span>
+              <span class="tag">Remote Team Collaboration</span>
+              <span class="tag">Early-Stage Startups</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <hr class="divider divider3">
 
-  <footer class="social">
+  <footer class="social" id="social">
     <div class="container">
-      <h5 class="copy">Find me on</h5>
+      <h2 class="copy">Find me on</h2>
       <ul class="icons">
         <li>
-          <a href="https://github.com/raclee7" target="_blank">
-            <i class="fa fa-github"></i>
+          <a href="https://github.com/raclee7" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)">
+            <i class="fa fa-github" aria-hidden="true"></i>
           </a>
         </li>
         <li>
-          <a href="https://linkedin.com/in/rachlee012" target="_blank">
-            <i class="fa fa-linkedin"></i>
+          <a href="https://linkedin.com/in/rachlee012" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
           </a>
         </li>
         <li>
-          <a href="https://medium.com/@rach_lee" target="_blank">
-            <i class="fa fa-medium"></i>
+          <a href="https://medium.com/@rach_lee" target="_blank" rel="noopener noreferrer" aria-label="Medium (opens in a new tab)">
+            <i class="fa fa-medium" aria-hidden="true"></i>
           </a>
         </li>
       </ul>
-      <span class="copy copy_bottom">Made from scratch by Rachel</span>
+      <p class="copy copy_bottom">© 2026 Rachel Lee</p>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
-  <script src="js/app.js"></script>
 </body>
 </html>
