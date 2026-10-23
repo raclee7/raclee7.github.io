@@ -80,7 +80,11 @@
         <div class="featured-cards">
           <div class="featured-card">
             <h3 class="featured-card-title">Design System Strategy</h3>
-            <p class="featured-card-summary">Defined the design system migration strategy that became the org's path to React 19, endorsed by design and engineering committees as the standard for frontend modernization. Paired it with a brand refresh for a unified, consistent experience across pages.</p>
+            <ul class="impact-list">
+              <li>Shaped the migration strategy with design and engineering partners, becoming the org's path to React 19</li>
+              <li>Earned endorsement from design and engineering committees as the standard for frontend modernization</li>
+              <li>Paired it with a brand refresh for a unified, consistent experience across pages</li>
+            </ul>
             <div class="featured-card-tags">
               <span class="tag">React 19</span>
               <span class="tag">Design Systems</span>
@@ -92,7 +96,12 @@
           </div>
           <div class="featured-card">
             <h3 class="featured-card-title">Scaling AI Tooling</h3>
-            <p class="featured-card-summary">Built custom Model Context Protocol (MCP) servers and AI agent skills integrated with design and browser tooling. Rolled out across the monorepo, then extended to standalone client-facing web apps outside the monorepo. Led workshops guiding developers across portfolios through hands-on adoption, and presented the approach org-wide at a company development showcase.</p>
+            <ul class="impact-list">
+              <li>Built custom Model Context Protocol (MCP) servers and AI agent skills integrated with design and browser tooling</li>
+              <li>Rolled out across the monorepo, then worked with app teams to extend it to standalone client-facing web apps outside it</li>
+              <li>Ran workshops with developers across portfolios, working through adoption hands-on</li>
+              <li>Shared the approach org-wide at a company development showcase</li>
+            </ul>
             <div class="featured-card-tags">
               <span class="tag">MCP</span>
               <span class="tag">Agent Skills</span>
@@ -106,7 +115,11 @@
           </div>
           <div class="featured-card">
             <h3 class="featured-card-title">Visual Quality at Scale</h3>
-            <p class="featured-card-summary">Made visual testing part of everyday delivery by growing visual regression coverage (Chromatic) ~4x across the monorepo and external apps, with a shared setup any team can add to its PRs. Led developers across portfolios as monthly design system delivery more than doubled alongside adoption.</p>
+            <ul class="impact-list">
+              <li>Worked with teams to make visual testing part of everyday delivery, growing visual regression coverage (Chromatic) ~4x</li>
+              <li>Built a shared setup with teams so anyone can add automated visual review to their PRs</li>
+              <li>Supported developers across portfolios as monthly design system delivery more than doubled</li>
+            </ul>
             <div class="featured-card-tags">
               <span class="tag">Chromatic</span>
               <span class="tag">Storybook</span>
@@ -117,7 +130,13 @@
           </div>
           <div class="featured-card">
             <h3 class="featured-card-title">Web Monorepo Migration</h3>
-            <p class="featured-card-summary">Led drafting of the monorepo migration playbook with the Developer Experience team, cutting a monorepo migration from weeks to days and becoming the guide for every migration that follows. Set the adoption strategy and roadmap, from an architecture decision record to an enterprise-endorsed standard, with future migrations planned alongside Product leadership. Cut flaky CI failures by ~30% by tracing a recurring esbuild deadlock to apps still on the classic Remix compiler, measuring it with a repeatable scan of CI runs, and partnering with app teams on fixes.</p>
+            <ul class="impact-list">
+              <li>Led drafting of the migration playbook with the Developer Experience team, cutting a migration from weeks to days</li>
+              <li>Shaped the adoption strategy and roadmap with partner teams, from an architecture decision record to an enterprise-endorsed standard</li>
+              <li>Planned future migrations alongside Product leadership</li>
+              <li>Cut flaky CI failures by ~30% after tracing a recurring esbuild deadlock to apps still on the classic Remix compiler</li>
+              <li>Built a repeatable scan of CI runs to measure it, and partnered with app teams on fixes</li>
+            </ul>
             <div class="featured-card-tags">
               <span class="tag">Rush Monorepo</span>
               <span class="tag">Migration Playbooks</span>
@@ -151,6 +170,7 @@
                   <span class="skill-pill">Redux.js</span>
                   <span class="skill-pill">Rush Monorepo</span>
                   <span class="skill-pill">Migration Strategy</span>
+                  <span class="skill-pill">Web Performance</span>
                 </div>
               </div>
               <div class="skills-group">
@@ -181,6 +201,7 @@
                 <div class="skills-pills">
                   <span class="skill-pill">Docker</span>
                   <span class="skill-pill">CI/CD</span>
+                  <span class="skill-pill">CI Reliability</span>
                   <span class="skill-pill">Fastly / CDN</span>
                 </div>
               </div>
@@ -253,14 +274,14 @@
           </div>
 
           <ul class="impact-list">
-            <li>Set the org's path to React 19 with the design system migration strategy, endorsed by design and engineering committees as the standard for frontend modernization</li>
-            <li>Grew visual testing coverage ~4x with a shared setup any team can add to its PRs, while monthly design system delivery more than doubled across portfolios</li>
-            <li>Scaled AI-assisted development across portfolios through workshops on agent skills and MCP tooling, extended to standalone client-facing web apps outside the monorepo</li>
-            <li>Cut monorepo migrations from weeks to days with a playbook now used as the guide for every migration, and set the adoption strategy and roadmap</li>
+            <li>Shaped the design system migration strategy with design and engineering partners, endorsed by committees as the org's path to React 19 and the standard for frontend modernization</li>
+            <li>Worked with teams to grow visual testing coverage ~4x through a shared setup anyone can add to their PRs, while monthly design system delivery more than doubled across portfolios</li>
+            <li>Scaled AI-assisted development across portfolios through hands-on workshops on agent skills and MCP tooling, and worked with app teams to extend it to standalone client-facing web apps outside the monorepo</li>
+            <li>Cut monorepo migrations from weeks to days with a playbook now used as the guide for every migration, and shaped the adoption strategy and roadmap with partner teams</li>
             <li>Cut flaky CI failures by ~30% by tracing a recurring esbuild deadlock to apps still on the classic Remix compiler, measuring it with a repeatable scan of CI runs, and partnering with app teams on fixes</li>
             <li>Contributed to the Accommodations team alongside my platform role to speed up moving a high-traffic hotel details page, a key step before booking, from a legacy React app onto the Next.js framework, building its routing, typed GraphQL data layer, analytics tracking, and design system migration</li>
             <li>Supported brand refresh efforts across teams by helping integrate the new design system carousel into marketing pages and across the site, from hotel, flight, car, and package listings to filter chips</li>
-            <li>Helped the marketing team diagnose intermittent font and layout-ordering bugs on partner marketing pages as a React hydration mismatch. The design system migration had replaced styles written directly into the page's HTML with separately loaded stylesheets, exposing a long-standing weakness in how the page loaded. Gave them a fix plan: reproduce hydration issues locally first, enable production logging, and upgrade to React 19 for clearer hydration error diffs</li>
+            <li>Helped the marketing team diagnose intermittent font and layout-ordering bugs on partner marketing pages as a React hydration mismatch. The design system migration had replaced styles written directly into the page's HTML with separately loaded stylesheets, exposing a long-standing weakness in how the page loaded. Worked through a fix plan with them: reproduce hydration issues locally first, enable production logging, and upgrade to React 19 for clearer hydration error diffs</li>
             <li>Resolved production hydration errors across client-facing React apps, cutting error rates by ~80% and initial load time by ~15%, and eliminating recurring PagerDuty alerts that had been waking up on-call engineers. <a href="https://medium.com/stackademic/resolving-hydration-errors-in-server-side-rendered-react-applications-c2f09daff7e5" target="_blank" rel="noopener noreferrer">Read the write-up</a></li>
             <li>Set up 12-factor backing services during an on-prem-to-cloud migration, letting teams switch environments via configuration. <a href="https://medium.com/stackademic/setting-up-backing-services-in-frontend-applications-f9486b6d62d3" target="_blank" rel="noopener noreferrer">Read the write-up</a></li>
           </ul>
@@ -277,35 +298,72 @@
             <div class="mini-timeline">
               <div class="mini-timeline-item">
                 <span class="mini-timeline-year">2026</span>
-                <p class="mini-timeline-desc">Set the design system migration as the org's path to React 19, made AI-assisted development and visual testing standard practice (~4x more coverage), and led drafting of the migration playbook that turned monorepo migrations from weeks into days. Contributed to the Accommodations team alongside my platform role to move a high-traffic hotel details page from a legacy React app onto the Next.js framework, helped teams through their brand refresh by integrating the new design system carousel across marketing pages and listings, and traced hard-to-reproduce marketing page bugs to hydration mismatches with a clear fix plan. Also kept the TypeScript monorepo unblocked through disciplined CI and test ownership, cut flaky CI failures by ~30%, and introduced GitHub Actions and Slack notifications that sped up PR reviews org-wide.</p>
+                <ul class="mini-timeline-points">
+                  <li>Shaped the org's path to React 19 through a design system migration</li>
+                  <li>Worked with teams to make AI-assisted development and visual testing standard practice (~4x more coverage)</li>
+                  <li>Led drafting of the migration playbook that turned monorepo migrations from weeks into days</li>
+                  <li>Contributed to the Accommodations team alongside my platform role to move a high-traffic hotel details page from a legacy React app onto the Next.js framework</li>
+                  <li>Helped teams through their brand refresh by integrating the new design system carousel across marketing pages and listings</li>
+                  <li>Traced hard-to-reproduce marketing page bugs to hydration mismatches and worked through a fix plan with the team</li>
+                  <li>Kept the TypeScript monorepo unblocked through disciplined CI and test ownership</li>
+                  <li>Cut flaky CI failures by ~30%</li>
+                  <li>Partnered with teams to add GitHub Actions and Slack notifications that sped up PR reviews org-wide</li>
+                </ul>
               </div>
               <div class="mini-timeline-item">
                 <span class="mini-timeline-year">2025</span>
-                <p class="mini-timeline-desc">Built new design system components (including a Carousel) adopted by teams across dozens of pages, migrated apps from styled-components to Tailwind, and cut Rental Cars landing-page load time by ~2 seconds.</p>
+                <ul class="mini-timeline-points">
+                  <li>Built new design system components (including a Carousel) adopted by teams across dozens of pages</li>
+                  <li>Migrated apps from styled-components to Tailwind</li>
+                  <li>Cut Rental Cars landing-page load time by ~2 seconds</li>
+                </ul>
               </div>
               <div class="mini-timeline-item">
                 <span class="mini-timeline-year">2024</span>
-                <p class="mini-timeline-desc">Led a multi-quarter Rental Cars supplier launch, upgraded apps to React 18, designed the GraphQL migration roadmap, and automated QA deploys.</p>
+                <ul class="mini-timeline-points">
+                  <li>Led a multi-quarter Rental Cars supplier launch</li>
+                  <li>Upgraded apps to React 18</li>
+                  <li>Designed the GraphQL migration roadmap</li>
+                  <li>Automated QA deploys</li>
+                </ul>
               </div>
               <div class="mini-timeline-item">
                 <span class="mini-timeline-year">2023</span>
-                <p class="mini-timeline-desc">Shipped Car Upgrade in Checkout at 4.6% conversion, scoped Packages Full Listings at a 90% win probability, and mentored co-op students and junior-to-mid-level engineers across 3+ codebases.</p>
+                <ul class="mini-timeline-points">
+                  <li>Shipped Car Upgrade in Checkout at 4.6% conversion</li>
+                  <li>Scoped Packages Full Listings at a 90% win probability</li>
+                  <li>Mentored co-op students and junior-to-mid-level engineers across 3+ codebases</li>
+                </ul>
               </div>
               <div class="mini-timeline-item">
                 <span class="mini-timeline-year">2022</span>
-                <p class="mini-timeline-desc">Drove the iOS team's REST-to-GraphQL migration as Web UX point of contact, led Fullstory PII-masking rollout, and improved accessibility across customer-facing pages.</p>
+                <ul class="mini-timeline-points">
+                  <li>Partnered with the iOS team on their REST-to-GraphQL migration as Web UX point of contact</li>
+                  <li>Led Fullstory PII-masking rollout</li>
+                  <li>Improved accessibility across customer-facing pages</li>
+                </ul>
               </div>
               <div class="mini-timeline-item">
                 <span class="mini-timeline-year">2021</span>
-                <p class="mini-timeline-desc">Migrated to streaming SSR for faster TTFB, built 12-factor backing services for the on-prem-to-cloud migration, and fixed a memory leak causing Kubernetes pod restarts.</p>
+                <ul class="mini-timeline-points">
+                  <li>Migrated to streaming SSR for faster TTFB</li>
+                  <li>Built 12-factor backing services for the on-prem-to-cloud migration</li>
+                  <li>Fixed a memory leak causing Kubernetes pod restarts</li>
+                </ul>
               </div>
               <div class="mini-timeline-item">
                 <span class="mini-timeline-year">2020</span>
-                <p class="mini-timeline-desc">Introduced Cypress end-to-end testing (later replaced by Mabl), plus the hackathon win above.</p>
+                <ul class="mini-timeline-points">
+                  <li>Introduced Cypress end-to-end testing (later replaced by Mabl)</li>
+                  <li>Won the hackathon grand prize (see above)</li>
+                </ul>
               </div>
               <div class="mini-timeline-item">
                 <span class="mini-timeline-year">2019</span>
-                <p class="mini-timeline-desc">Migrated the Rental Cars landing page to TypeScript and advocated WebP delivery via Fastly for faster image loads.</p>
+                <ul class="mini-timeline-points">
+                  <li>Migrated the Rental Cars landing page to TypeScript</li>
+                  <li>Advocated WebP delivery via Fastly for faster image loads</li>
+                </ul>
               </div>
             </div>
           </details>
